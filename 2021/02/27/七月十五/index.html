@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>fdw&#39;blog</title>
+  <title>辛丑六月初六 | fdw&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="fdw&#39;blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="为了unity学c#好吧听了一会确实跟java差不多 可以边划边听 很nice 大概好像是：using 来调用包namespace 项目名{    class 类名{            main主方法{}    }} 他讲的好多都是.Net的 用的都是visual studio 就是听一听我就是只学c# Console.WriteLine(“hello world”);Console.Read">
+<meta property="og:type" content="article">
+<meta property="og:title" content="辛丑六月初六">
+<meta property="og:url" content="http://example.com/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/index.html">
 <meta property="og:site_name" content="fdw&#39;blog">
+<meta property="og:description" content="为了unity学c#好吧听了一会确实跟java差不多 可以边划边听 很nice 大概好像是：using 来调用包namespace 项目名{    class 类名{            main主方法{}    }} 他讲的好多都是.Net的 用的都是visual studio 就是听一听我就是只学c# Console.WriteLine(“hello world”);Console.Read">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-02-26T16:45:53.000Z">
+<meta property="article:modified_time" content="2021-07-15T15:21:01.284Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -29,9 +33,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -43,8 +44,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -234,9 +235,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-七月十五" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-七月十五" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/" class="article-date">
@@ -252,12 +251,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a>
+    <h1 class="article-title" itemprop="name">
+      辛丑六月初六
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -272,87 +278,196 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+        <p><span>发布时间:</span>2021年02月27日 - 00时45分</p>
+        <p><span>最后更新:</span>2021年07月15日 - 23时21分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/" title="辛丑六月初六">http://example.com/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/02/27/%E6%9A%91%E5%81%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">暑假</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-暑假" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/02/27/%E6%9A%91%E5%81%87/" class="article-date">
-      <time datetime="2021-02-26T16:45:53.000Z" itemprop="datePublished">2021-02-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
-      <input type="hidden" class="isFancy" />
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
     
+      <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81MzE0Ny8yOTYyMw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
     
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/27/%E6%9A%91%E5%81%87/">暑假</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>暑假真的天天跟好友玩游戏确实是很快乐的一件事<br>但是每次一放假就又想着学 啊哈哈 我确实有什么大病<br>unity制作是基于c#<br>听说c#跟java是好兄弟<br>我给我自己大概2-3周把c#入门先学会 也有可能会更长<br>毕竟别人叫我打游戏我也不太会拒绝<br>争取在开学前能初步了解和使用unity<br>（今天踢球受伤了 难受）<br>好希望暑假是充实且有意思的（约我出去玩 我也想天天噶在外面 叫我我是不会拒绝的¿）</p>
-<p><img src="/2021/02/27/%E6%9A%91%E5%81%87/%E9%95%87%E6%A5%BC.jpg" alt="柒柒柒"></p>
-
-      
-      
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2021/02/27/%E6%9A%91%E5%81%87/" title="下一篇: 暑假">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/02/27/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/02/27/%E6%9A%91%E5%81%87/">暑假</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
