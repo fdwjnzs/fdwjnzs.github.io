@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>fdw&#39;blog</title>
+  <title>7-31 | fdw&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="fdw&#39;blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="不兼容的类型转换：比如string与int 或者string与double需要用到convert类型转换例子：string s &#x3D;“123”；          double d&#x3D; convert.todouble(s);          int n &#x3D;convert.toint32(s);          console.writeline(n);          console.writ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7-31">
+<meta property="og:url" content="http://example.com/2021/07/31/7-31/index.html">
 <meta property="og:site_name" content="fdw&#39;blog">
+<meta property="og:description" content="不兼容的类型转换：比如string与int 或者string与double需要用到convert类型转换例子：string s &#x3D;“123”；          double d&#x3D; convert.todouble(s);          int n &#x3D;convert.toint32(s);          console.writeline(n);          console.writ">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-07-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-07-30T16:58:12.152Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -29,9 +33,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -43,8 +44,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -234,9 +235,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-7-31" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-7-31" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2021/07/31/7-31/" class="article-date">
@@ -252,12 +251,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/31/7-31/">7-31</a>
+    <h1 class="article-title" itemprop="name">
+      7-31
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -275,401 +281,196 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2021/07/31/7-31/">7-31</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+        <p><span>发布时间:</span>2021年07月31日 - 00时00分</p>
+        <p><span>最后更新:</span>2021年07月31日 - 00时58分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2021/07/31/7-31/" title="7-31">http://example.com/2021/07/31/7-31/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/07/31/7-31/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/26/7-26/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">7-26</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-7-26" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/26/7-26/" class="article-date">
-      <time datetime="2021-07-25T16:00:00.000Z" itemprop="datePublished">2021-07-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
-      <input type="hidden" class="isFancy" />
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
     
+      <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81MzE0Ny8yOTYyMw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
     
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/26/7-26/">7-26</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>网线分为 568A 和568B<br>568A主要应用于交叉线 什么意思呢 就是网线两头 一端为568A 另一端为568B<br>线序的排布为 白绿 绿 白橙 蓝 白蓝 橙 白棕 棕<br>568B则主要应用于直连线 意思就是网线两头都是为568B排布<br>568B的线序排布为白橙 橙 白绿 蓝 白蓝 绿 白棕 棕</p>
-<p>过去568A和568B是要分情况使用的 在交换机 HUB PC 路由器之间有着明确的划分的<br>但是随着科技的发展 这种需要辨别的情况就日渐减弱<br>在我们国家最常见的就是568B 这种线序排布<br>已经满足我们日常生活的需要了</p>
-<p>虽然分为8根线 但是真正起作用的还是只有四根 为白橙 橙 白绿 绿 对用B的 1 2 3 6这四根<br>另外 4 5 号线对应的蓝 白蓝 起到的是电话线  7 8 白棕 棕 则是监控线</p>
-<p>真正做这个网线其实很容易 没什么好说的<br>为什么会聊到这个呢 主要是实习的时候要求帮个忙 但是我不会 老尴尬了<br>虽然是学的软件 但是呢 我觉得这种技能还是比较基础的 就记录下来了<br>另外还有些测试硬盘 重装系统 安装盗版windows 哈哈哈就更没什么好说的了~</p>
-<p>c# （第几天 忘记了）<br>还是很基础的一天：</p>
-<ul>
-<li>连接两个字符串 （当+两边有一边为字符串就是起这个作用）<br>占位符：这个东西在java好像没遇到过 c里面不记得了<br>c#中占位符是特别重要的一个符号了<br>{0}{1}{2}类似这种 输出的时候：Console.WriteLine(“要输出的是{0}{1}”,n1,n2);<br>n1,n2之前定义过的 比之前用+没那么容易出错<br>多填坑 不报错 没实际效果<br>少填了坑 出现异常（但是语法并没有错误，不过在程序运行期间出现问题，使得程序不能正常运行）<br>占位符最终是按照挖坑的顺序输出<br>占位符在一个输出语句中始终要从{0}开始 不管之前写到哪里<br>{0:0.00}表示小数点后保留两个小数</li>
-</ul>
-<p>交换两个数字 不用第三方变量<br>a=a+b<br>b=a-b<br>a=a-b</p>
-<p>接收用户在控制台的输入Console.ReadLine();<br>但是需要定义一个字符串类型的变量来存储输入的数据string<br>例：string a = Console.ReadLine();</p>
-<p>转义符 ‘\’加一个字符组成一个由特殊意义的字符：<br>\n 换行<br>&quot;表示一个英文下的双引号<br>\t 表示一个tab键的空格 多用于排版<br>\b 表示一个退格键 放在字符串两边没有效果<br>\表示一个\</p>
-<p>@符号写在“”之前表示让\不作为转义符 单纯作为一个\<br>第二个作用是保留原格式输出</p>
-<p>在char中 只能写一个字符 但是在单引号之间写比如一个\b 此处的\表示转义的作用<br>这个\表示的是backspace 即退格键</p>
-<p>算数运算符</p>
-<ul>
-<li><ul>
-<li><ul>
-<li> /（整除）   % (取余)  </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>要求等号两边参与操作数的类型必须一致，如果不一致，满足下列条件，发生隐式转换<br>类型兼容 且 目标类型大于源类型：比如int转换成 double<br>如果要将double转换成int 需要强制类型转换<br>（待转换的类型）要转换的值；<br>比如说d=300.6<br>         int n =（int）d；<br>最后会输出300</p>
-<p>头疼 gaming ^_^</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-7.22" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/22/7.22/" class="article-date">
-      <time datetime="2021-07-22T12:58:52.782Z" itemprop="datePublished">2021-07-22</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/22/7.22/">无题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>遇到不想遇到的<br>我唯一想到的只有<br>赶紧走<br>逃离这个镇<br>回避各忆<br>躲于角落<br>纵使身旁人 不知<br>何故<br>对曰<br>一眼可识两人<br>即为影<br>一拳可捶出吾 慌张姿态</p>
-<p>两年成长似巨人<br>各类知识灌脑<br>看似冷静 且自信<br>为此<br>憾心振地<br>我为为我愿<br>我愿为了其未来生活<br>离开 逃避<br>他人眼中 吾<br>不可为丈夫<br>吾笑他 不懂社会复杂<br>无能力不可有情<br>无实力 不会有联系<br>无钱财 不会有完美生活</p>
-<p>转眼<br>已拐入服饰店内<br>我依旧是我<br>她还是他 不忘 不见<br>我怅然大笑<br>眨眼 已是驾车远离<br>天空很蓝 太阳很耀眼<br>回想<br>百种汹涌<br>总有来由<br>万般历练<br>皆是生活</p>
-<p><img src="/2021/07/22/7.22/%E6%BB%9A.jpg" alt="带祝滚"></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-卧槽，管" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/" class="article-date">
-      <time datetime="2021-07-17T16:45:53.000Z" itemprop="datePublished">2021-07-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/">卧槽，管</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>谢谢你 泽元 你就是未来战士</p>
-<p><img src="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/%E6%B3%BD%E5%85%83.jpg" alt="泽元"><br><img src="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/%E9%A2%84%E6%B5%8B%E5%9B%BE.jpg" alt="泽元"></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-7.18" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/17/7.18/" class="article-date">
-      <time datetime="2021-07-16T16:00:00.000Z" itemprop="datePublished">2021-07-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <a href="/2021/07/26/7-26/" title="下一篇: 7-26">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/17/7.18/">咕咕咕</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>// 都是这样注释的 没的区别 注销和解释<br>单行注释//<br>多行注释  /* 内容*/<br>文档注释 /// 用来解释类和方法</p>
-<p>vs常用快捷键：<br>ctrl+k+d 快速对齐 (好像真的没有什么用)<br>ctrl+z 撤销<br>ctrl+s 保存<br>ctrl+j 快速弹出智能提示 没用！！<br>shift+home<br>shift+end 快速选中行、行尾切换<br>ctrl+k+c注释所选代码<br>ctrl+k+u取消所选代码的注释</p>
-<p>#region<br>#endregion 此两行用于折叠冗余代码</p>
-<p>数据类型 没有什么好说的<br>char(只能存一个’x’) string字符串”xxx”<br>decimal类型 后缀要加m 不加m转换为double类型<br>称其为金钱类型</p>
-<p>命名规范：第一个单词首字母小写后面单词首字母都要大写 多用于变量<br>    每个单词首字母都要大写 多用于类名<br>    ¿ ¿ ¿<br>虽然没学到什么 但是看得我好累啊 休息 休息去</p>
-<p>好久不玩 pubg 以前买了不玩是因为我是在是太菜了<br>这几天天天训练场练枪 发现这个枪是真的难压 也太飘了<br>要不是有人陪我一起玩 真的没几天真的是又有点劝退我了<br>我还是适合那种种种地 看看剧情的养身游戏啊~</p>
-<p><img src="/2021/07/17/7.18/%E6%9F%92.jpg" alt="沙雕图"></p>
-
-      
-      
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/07/31/7-31/">7-31</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/26/7-26/">7-26</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/22/7.22/">无题</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/">卧槽，管</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/17/7.18/">咕咕咕</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/07/14/%E6%9A%91%E5%81%87/">暑假</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-
-
-  
-    <article id="post-七月十五" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/" class="article-date">
-      <time datetime="2021-07-14T16:00:00.000Z" itemprop="datePublished">2021-07-15</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <script>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>为了unity学c#好吧<br>听了一会确实跟java差不多 可以边划边听 很nice</p>
-<p>大概好像是：<br>using 来调用包<br>namespace 项目名<br>{<br>    class 类名{<br>            main主方法{}<br>    }<br>}</p>
-<p>他讲的好多都是.Net的 用的都是visual studio 就是听一听<br>我就是只学c#</p>
-<p>Console.WriteLine(“hello world”);<br>Console.Readkey();  // 暂停当前程序等待用户按下任意键继续 并且这个按下的键会显示在我们的控制台中</p>
-<p>卧槽这个VS 生成 解决方案能直接告诉你哪里错了 要输入什么 这不比c java 找错误来的方便</p>
-<p>第一天的课确实无聊 终于可以玩游戏啦<br>有人安利我玩这个勇敢的心：世界大战 说是能让人玩哭 那我是不信的</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-暑假" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/07/14/%E6%9A%91%E5%81%87/" class="article-date">
-      <time datetime="2021-07-13T16:00:00.000Z" itemprop="datePublished">2021-07-14</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/14/%E6%9A%91%E5%81%87/">暑假</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>暑假真的天天跟好友玩游戏确实是很快乐的一件事<br>但是每次一放假就又想着学 啊哈哈 我确实有什么大病<br>unity制作是基于c#<br>听说c#跟java是好兄弟<br>我给我自己大概2-3周把c#入门先学会 也有可能会更长<br>毕竟别人叫我打游戏我也不太会拒绝<br>争取在开学前能初步了解和使用unity<br>（今天踢球受伤了 难受）<br>好希望暑假是充实且有意思的（约我出去玩 我也想天天噶在外面 叫我我是不会拒绝的¿）</p>
-<p><img src="/2021/07/14/%E6%9A%91%E5%81%87/%E9%95%87%E6%A5%BC.jpg" alt="柒柒柒"></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
