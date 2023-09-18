@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    2022-2-2 c# |
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-2022-2-2" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  2022-2-2 c#
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/02/02/2022-2-2/" class="article-date">
+  <time datetime="2022-02-01T16:00:00.000Z" itemprop="datePublished">2022-02-02</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <p>字符串提供的各种方法<br>（1）xxx.Length获得当前字符串中字符的个数<br>（2）xxx.ToUpper()转换成大写<br>         xxx.ToLower()转换成小写<br>（3）xxx.Equals(YYY)意思是xxx与yyy比较是否相同<br>        在yyy之后加入.StringComparation.OrdinalIgnoreCase比较可忽略大小写<br>（4）字符串的分割<br>定义一个string类型的字符串s，里面有+ - = 空格 abcd等字母<br>先定义一个char[] chs={‘+’，‘ ’，‘-’，‘=’，‘，’}；<br>把不需要的字符放进去<br>这个时候string[] str=s.Split(chs);<br>里面不需要的字符已经被干掉了，但是原来字符的位置都是空<br>需要在chs之后添加参数StringSplitOptions.RemoveEmptyEntries<br>string[] str=s.Split(chs,StringSplitOptions.RemoveEmptyEntries);<br>就只剩下我们需要的acbd等字符了<br>***但是我自己试了一下好像vs2019中自动默认去掉了空，不用参数直接就行！！！</p>
+<hr>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">string str = "国家关键人物老习";</span><br><span class="line">            if (str.Contains("习"))</span><br><span class="line">            {</span><br><span class="line">                str = str.Replace("习", "***");</span><br><span class="line">            }</span><br><span class="line">            Console.WriteLine(str);</span><br><span class="line">            Console.ReadKey();</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="Substring截取字符串"><a href="#Substring截取字符串" class="headerlink" title="Substring截取字符串"></a>Substring截取字符串</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string str = "相见争如不见，有情还似无情";</span><br><span class="line">            str = str.Substring(1, 3);</span><br><span class="line">            Console.WriteLine(str);</span><br><span class="line">            Console.ReadKey();</span><br></pre></td></tr></tbody></table></figure>
+<p>这里1,3作为参数1代表第几个字符，3代表长度<br>如上代码输出为   –&gt;  见争如</p>
+<p>xxx.StartWith(“从哪个开始的数”);<br>xxx.EndWith(“以哪个结束的数”);<br>返回的bool类型，用以判断</p>
+<p>xxx.IndexOf(‘要找的字符’,寻找的起始位置); 返回int类型的值 找不到返回-1<br>xxx.LastIndexOf(‘出现在最后要找的字符’); 返回int类型的值 找不到返回-1</p>
+<hr>
+<h2 id="LastIndexOf与Substring"><a href="#LastIndexOf与Substring" class="headerlink" title="LastIndexOf与Substring"></a>LastIndexOf与Substring</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string path = @"c:\a\s\d\fd\gfsfwe\fwfw\fdw.word";</span><br><span class="line">            int index = path.LastIndexOf("\\");</span><br><span class="line">            path = path.Substring(index + 1);</span><br><span class="line">            Console.WriteLine(path);</span><br><span class="line">            Console.ReadKey();</span><br></pre></td></tr></tbody></table></figure>
+<p>xxx.Trim()；用于去掉头和尾的空格<br>xxx.TrimStart()；用于去掉头的空格<br>xxx.TrimEnd()；用于去掉尾的空格<br>string.IsNullOrEmpty(要判断的字符串)用于判断是否为空/null<br>string.join（“用于分割的符号”,要处理的数组名或者将每个数组写进去因为是params）返回一个字符串</p>
+<hr>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>语法：<br>子类名：父类名<br>{<br>    方法体；<br>}<br>子类继承父类的属性和方法，不继承私有字段<br>继承的特性：<br>（1）单根型：一个子类只能有一个父类<br>（2）传递性<br>通常可以查看类图 比较清晰明了</p>
+<p>子类没有继承父类的构造函数，但是子类会默认调用父类无参数的构造函数<br>，创建父类的对象，来让子类可以使用父类中的成员<br>在父类中写了一个有参数的构造函数，原来无参数的就被干掉了，调用不到，然后报错<br>解决办法：1）在父类中重新写一个无参数的构造函数<br>                 2）用关键字：base（）直接调用父类中有参数的构造函数</p>
+<hr>
+<p>new关键字<br>1）创建对象<br>2）隐藏从父类那里继承过来同名成员（子类调用不到父类的成员）</p>
+<hr>
+<h2 id="里氏转换"><a href="#里氏转换" class="headerlink" title="里氏转换"></a>里氏转换</h2><p>1）子类可以赋值给父类：如果有一个地方需要一个父类作为参数，我们可以给一个子类代替<br>student s=new student（）；<br>person p =s；<br>—–&gt;person p=new student（）；<br>2）如果父类中装的是子类对象 那么可以将这个父类强转为子类对象<br>student ss=（student）p；<br>ss.SayHello();<br>子类对象可以调用父类的成员，但是父类对象永远都只能调用自己的成员    </p>
+<p>is:表示类型转换，如果能够转换成功，返回true否则就是false<br>as：表示类型转换，如果能转换则返回对应的对象，否则返回一个null</p>
+<p>protected访问修饰符：可以在该类的内部以及该类的子类中进行访问</p>
+<hr>
+<h2 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h2><p>数组：长度不可变，类型单一<br>集合：长度可以任意改变，类型随便<br>ArrayList list =new ArrayList（）;<br>list.Add（任意类型,最好是单个元素）  用for循环输出 长度为list.count<br>但是我们将一个对象打印到控制台，默认情况打印的是这个对象所在类的命名空间<br>list.AddRange（添加集合元素）;<br>list.Clear();移除所有元素<br>list.Remove();移除单个元素，写谁删谁<br>list.RemoveAt();根据下标删除元素<br>list.RemoveRange();根据下标删除一定范围的元素<br>list.Sort();升序排列<br>list.Reverse();反转<br>list.Insert(位置,元素);插入单个元素<br>list.InsertRange(位置，集合);插入集合<br>bool x=list.contains（）；是否包含某个指定的元素</p>
+<p>ArrayList长度问题<br>count：表示这个集合中实际包含元素的个数<br>capacity：表示这个集合中可以包含元素的个数<br>当count超过capacity，集合就会向内存申请多开辟一倍的空间，来保证集合的长度一直够用</p>
+<hr>
+<h2 id="hashtable键值对集合"><a href="#hashtable键值对集合" class="headerlink" title="hashtable键值对集合"></a>hashtable键值对集合</h2><p>hashtable th=new hashtable（）；<br>th.Add(键，值);<br>th[键]=值；<br>输出键值对循环需要用到foreach循环<br>foreach（var item in xx）<br>{<br>    方法体；<br>}</p>
+<hr>
+<h2 id="path类"><a href="#path类" class="headerlink" title="path类"></a>path类</h2><p>快速获得一个路径下文件的名字 Path.GetFileName();<br>获得文件名但是不包含扩展名Path.GetFileNameWithoutExtension();<br>直接获得文件的扩展名Path.GetExtension();<br>获得文件所在的文件夹的名称Path.GetDirectoryName();<br>获得文件所在的全路径Path.GetFullPath();</p>
+<hr>
+<h2 id="file类"><a href="#file类" class="headerlink" title="file类"></a>file类</h2><p>在某路径创建文件File.Create(@”路径\文件名”);<br>同理file.delete();<br>复制一个文件File.Copy(@”路径\文件名”,@”路径\新文件名”);<br>1024byte=1kb<br>1024kb=1M<br>1024M=1G<br>1024G=1T<br>1024T=1PT</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/02/02/2022-2-2/" data-id="clmob26cv000cgg94aqpk08nv" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2023/09/15/hello-world/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      Hello World
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2022/02/01/2022-2-1/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">2022-2-1</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

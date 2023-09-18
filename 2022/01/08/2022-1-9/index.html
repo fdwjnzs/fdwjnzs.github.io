@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    2022-1-8 |
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-2022-1-9" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  2022-1-8
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/08/2022-1-9/" class="article-date">
+  <time datetime="2022-01-07T16:00:00.000Z" itemprop="datePublished">2022-01-08</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h2 id="方法练习1"><a href="#方法练习1" class="headerlink" title="方法练习1"></a>方法练习1</h2><p>用方法来实现：有一个字符串数组<br>{“马龙”，“迈克尔乔丹”，“雷吉米勒”，“蒂姆邓肯”，“科比布莱恩特”}<br>请输出最长的字符串</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_1_8</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            string[] name = {"马龙","迈克尔乔丹","雷吉米勒","蒂姆邓肯","科比布莱恩特"};</span><br><span class="line">            int MaxLenth = GetLength(name);</span><br><span class="line">            System.Console.WriteLine(MaxLenth);</span><br><span class="line"></span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 求一个数组中字符串最长的长度</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="name"&gt;数组名&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;最长长度&lt;/returns&gt;</span><br><span class="line">        public static int GetLength(string[] name)</span><br><span class="line">        {</span><br><span class="line">            string MaxLength = name[0];</span><br><span class="line">            for (int i = 0; i &lt; name.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                if (name[i].Length &gt; MaxLength.Length)</span><br><span class="line">                {</span><br><span class="line">                     MaxLength= name[i];</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            return MaxLength.Length;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习2"><a href="#方法练习2" class="headerlink" title="方法练习2"></a>方法练习2</h2><p>请计算出一个整数数组的平均值，保留两位小数</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_8</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] Number = { 1, 2, 7 };</span><br><span class="line">            double Eve = GetEve(Number);</span><br><span class="line">            string s = Eve.ToString("0.00");</span><br><span class="line">            Eve = Convert.ToDouble(s);</span><br><span class="line">            Console.WriteLine(Eve);</span><br><span class="line">        }</span><br><span class="line">        public static double GetEve(int[] Number)</span><br><span class="line">        {</span><br><span class="line">            double sum = 0;</span><br><span class="line">            for (int i = 0; i &lt; Number.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                sum += Number[i];</span><br><span class="line">            }</span><br><span class="line">            return sum / Number.Length;</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习3"><a href="#方法练习3" class="headerlink" title="方法练习3"></a>方法练习3</h2><p>接受输入后判断其等级<br>判断依据如下：等级优90-100，等级亮80-89</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("请输入考试成绩");</span><br><span class="line">            int score = Convert.ToInt32(Console.ReadLine());</span><br><span class="line">            string level = GetLevel(score);</span><br><span class="line">            Console.WriteLine("考试等地为{0}", level);</span><br><span class="line">        }</span><br><span class="line">        public static string GetLevel(int score)</span><br><span class="line">        {</span><br><span class="line">            string level = "";</span><br><span class="line">            switch (score / 10)</span><br><span class="line">            {</span><br><span class="line">                case 10:</span><br><span class="line">                case 9: level = "优"; break;</span><br><span class="line">                case 8: level = "良"; break;</span><br><span class="line">                case 7:</span><br><span class="line">                case 6: level = "合格"; break;</span><br><span class="line">                default: level = "不合格"; break;</span><br><span class="line">            }</span><br><span class="line">            return level;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习4"><a href="#方法练习4" class="headerlink" title="方法练习4"></a>方法练习4</h2><p>反串字符串数组<br>循环数组.length/2次<br>for中循环体<br>{<br>    string temp=name[i];<br>    names[i]=names[names.length-1-i];<br>    names[names.length.length-1-i]=temp;<br>}<br>循环输出；<br>方法二：array.revers（数组名）</p>
+<hr>
+<h2 id="方法练习5"><a href="#方法练习5" class="headerlink" title="方法练习5"></a>方法练习5</h2><p>写一个方法，计算圆的面积和周长</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            //写一个方法，计算圆的面积和周长</span><br><span class="line">            Console.WriteLine("请输入圆的半径长");</span><br><span class="line">            double r = Convert.ToDouble(Console.ReadLine());</span><br><span class="line">            double S, C;</span><br><span class="line">            SandC(r, out S, out C);</span><br><span class="line">            Console.WriteLine("面积为{0}，周长为{1}",S,C);</span><br><span class="line">        }</span><br><span class="line">        public static void  SandC(double r,out double S,out double C)</span><br><span class="line">        {</span><br><span class="line">             S = 3.14 * r * r;</span><br><span class="line">             C = 2 * 3.14 * r;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>计算任意多个数间最大值</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            double Max=GetMax(1, 2, 3, 4, 5, 6);</span><br><span class="line">            Console.WriteLine(Max);</span><br><span class="line">        }</span><br><span class="line">        public static double GetMax(params double[] n)</span><br><span class="line">        {</span><br><span class="line">            double Max = n[0];</span><br><span class="line">            for (int i = 0; i &lt; n.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                if (n[i] &gt; Max)</span><br><span class="line">                {</span><br><span class="line">                    Max = n[i];</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            return Max;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>通过冒泡排序对数组进行升序排序</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] nums = { 1, 3, 5, 7, 90, 2, 4, 6, 8, 10 };</span><br><span class="line">            Change(nums);</span><br><span class="line">            for (int i = 0; i &lt; nums.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine(nums[i]);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        public static void Change(int[] nums)</span><br><span class="line">        {</span><br><span class="line">            for (int i = 0; i &lt; nums.Length-1; i++)</span><br><span class="line">            {</span><br><span class="line">                for (int j = 0; j &lt; nums.Length-1-i; j++)</span><br><span class="line">                {</span><br><span class="line">                    if (nums[j] &gt; nums[j + 1])</span><br><span class="line">                    {</span><br><span class="line">                        int temp = nums[j];</span><br><span class="line">                        nums[j] = nums[j + 1];</span><br><span class="line">                        nums[j + 1] = temp;</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/08/2022-1-9/" data-id="clmob26cr000agg94hki4dgji" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2022/01/08/2022-1-8/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      2022-1-8
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2022/01/03/2022-1-3/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">今天也是充满希望的一天</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

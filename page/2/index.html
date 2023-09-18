@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="jumbotron">
+  <div class="video">
+    
+    <div class="video-frame">
+      <img src="/images/ocean/overlay-hero.png" alt="Decorative image frame">
+    </div>
+    
+    <div class="video-media">
+      <video playsinline="" autoplay="" loop="" muted="" data-autoplay="" poster="/images/ocean/ocean.png"
+        x5-video-player-type="h5">
+        <source src="/images/ocean/ocean.mp4" type="video/mp4">
+        <source src="/images/ocean/ocean.ogv" type="video/ogg">
+        <source src="/images/ocean/ocean.webm" type="video/webm">
+        <p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="video-inner text-center text-white">
+      <h1><a href="/">fdw&#39;blog</a></h1>
+      <p></p>
+      <div><img src="/images/hexo-inverted.svg" class="brand" alt="fdw&#39;blog"></div>
+    </div>
+    <div class="video-learn-more">
+      <a class="anchor" href="#landingpage"><i class="fe fe-mouse"></i></a>
+    </div>
+  </div>
+</section>
+<div id="landingpage">
+  <section class="outer">
+  <article class="articles">
+    
+    <h1 class="page-type-title"></h1>
+    
+    
+    <article id="post-2022-1-29" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/29/2022-1-29/">2022-1-29</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/29/2022-1-29/" class="article-date">
+  <time datetime="2022-01-28T16:00:00.000Z" itemprop="datePublished">2022-01-29</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>静态与非静态区别：<br>（1）在非静态类中，既可以有实例成员，也可以有静态成员<br>（2）在调用实例成员的时候，需要使用对象名.实例成员;<br>         在调用静态成员的时候，需要使用类名.静态成员名;<br>总结：静态成员必须使用类名去调用，而实例成员使用对象名去调用<br>          静态函数中只允许访问静态成员，不允许访问实例成员<br>          实例函数中既可以使用静态成员，也可以使用实例成员<br>          静态类中只允许出现静态成员，不允许出现实例成员<br>使用：（1）如果你想要你的类当做一个工具类去使用，可以考虑将类写成静态类（console）<br>          （2）静态类在项目中资源共享</p>
+<hr>
+<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><p>作用：帮助我们初始化对象（给对象的每个属性依次的赋值）<br>构造函数是一个特殊的方法<br>1）构造函数没有返回值，void也不写<br>2）构造函数的名字要求与类名相同<br>创建对象的时候会执行构造函数<br>构造函数是可以用重载的</p>
+<hr>
+<h2 id="关键字new"><a href="#关键字new" class="headerlink" title="关键字new"></a>关键字new</h2><p>比如 Person A=new Person（）；<br>new做了三件事<br>（1）在内存中开辟空间<br>（2）在开辟的空间中创建对象<br>（3）调用对象的构造函数进行初始化对象</p>
+<hr>
+<h2 id="关键字this"><a href="#关键字this" class="headerlink" title="关键字this"></a>关键字this</h2><p>（1）代表当前类的对象<br>（2）在类当中显示的调用本类的构造函数 ：this</p>
+<hr>
+<h2 id="析构函数"><a href="#析构函数" class="headerlink" title="析构函数"></a>析构函数</h2><p>~Student（）<br>{<br>    方法体；<br>}<br>当程序结束的时候才执行<br>一般是帮助我们释放资源~~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/29/2022-1-29/" data-id="clmob26cl0006gg943accdpob" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-28" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/28/2022-1-28/">2022-1-28</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/28/2022-1-28/" class="article-date">
+  <time datetime="2022-01-27T16:00:00.000Z" itemprop="datePublished">2022-01-28</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>面向对象：意在写出一个通用的代码，屏蔽差异<br>类就是个模子，确定了对象应该具有的属性和方法<br>当我们创好一个类后，需要给这个对象的每个属性去赋值，我们管这个过程称之为对象的初始化</p>
+<hr>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>语法：<br>[public] class 类名<br>{<br>    字段；<br>    属性；<br>    方法；<br>}<br>写完类需要创建对象，创建对象的过程称之为类的实例化<br>使用关键字 new<br>this：当前这个类的对象<br>类是不占内存的，对象（字段）是占内存的</p>
+<hr>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>属性的作用就是保护字段，对字段的赋值和取值进行限定<br>属性的本质就是两个方法，一个是get（），一个是set（）<br>既有get也有set称之为可读可写<br>只有get称为只读<br>只有set称为只写<br>一般用属性给类的对象赋值，赋的值最后也是给到字段</p>
+<hr>
+<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><p>public 公开的<br>private：私有的 ，只能在当前类的内部进行访问</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/28/2022-1-28/" data-id="clmob26cl0005gg94alkm5h7s" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-24" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/24/2022-1-24/">硬核飞行棋</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/24/2022-1-24/" class="article-date">
+  <time datetime="2022-01-23T16:00:00.000Z" itemprop="datePublished">2022-01-24</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h2 id="最近偷懒了"><a href="#最近偷懒了" class="headerlink" title="最近偷懒了"></a>最近偷懒了</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace feixingqi</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        public static int[] Maps = new int[100];</span><br><span class="line">        //静态变量模拟全局变量</span><br><span class="line">        public static int[] PlayerPos = new int[2];</span><br><span class="line">        //声明一个静态数组用来存储玩家A与玩家B坐标</span><br><span class="line">        public static string[] PlayerNames = new string[2];</span><br><span class="line">        //存储两个玩家的姓名</span><br><span class="line">        public static bool[] Flags = new bool[2];</span><br><span class="line">        //两个玩家的标记</span><br><span class="line"></span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            GameShow();</span><br><span class="line">            #region 输入玩家姓名</span><br><span class="line">            Console.WriteLine("请输入玩家a的姓名");</span><br><span class="line">            PlayerNames[0] = Console.ReadLine();</span><br><span class="line">            while (PlayerNames[0] == "")</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine("玩家a的姓名不能为空，请重新输入");</span><br><span class="line">                PlayerNames[0] = Console.ReadLine();</span><br><span class="line">            }</span><br><span class="line">            Console.WriteLine("请输入玩家b的姓名");</span><br><span class="line">            PlayerNames[1] = Console.ReadLine();</span><br><span class="line">            while (PlayerNames[1] == "" || PlayerNames[1] == PlayerNames[0])</span><br><span class="line">            {</span><br><span class="line">                if (PlayerNames[1] == "")</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("玩家b的姓名不能为空，请重新输入");</span><br><span class="line">                    PlayerNames[1] = Console.ReadLine();</span><br><span class="line">                }</span><br><span class="line">                else</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("玩家b的姓名不能与玩家a的姓名相同，请重新输入");</span><br><span class="line">                    PlayerNames[1] = Console.ReadLine();</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            #endregion</span><br><span class="line">            //玩家输入完姓名之后应该先清屏</span><br><span class="line">            Console.Clear();//清屏</span><br><span class="line">            GameShow();</span><br><span class="line">            Console.WriteLine("{0}的士兵用A表示",PlayerNames[0]);</span><br><span class="line">            Console.WriteLine("{0}的士兵用B表示", PlayerNames[1]);</span><br><span class="line">            //画地图之前应该先初始化地图</span><br><span class="line">            InitialMap();</span><br><span class="line">            DrawMap();</span><br><span class="line"></span><br><span class="line">            while (PlayerPos[0] &lt;99 &amp;&amp; PlayerPos[1] &lt; 99)</span><br><span class="line">            {</span><br><span class="line">                if (Flags[0] == false) { PlayGame(0); }</span><br><span class="line">                else</span><br><span class="line">                {</span><br><span class="line">                    Flags[0] = false;</span><br><span class="line">                }</span><br><span class="line">                if (PlayerPos[0] &gt;= 99)</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("玩家{0}赢了",PlayerNames[0]);</span><br><span class="line">                    break;</span><br><span class="line">                }</span><br><span class="line">                if (Flags[1] == false) { PlayGame(1); }</span><br><span class="line">                {</span><br><span class="line">                    Flags[1] = false;</span><br><span class="line">                }</span><br><span class="line">                if (PlayerPos[1] &gt;= 99)</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("玩家{0}赢了", PlayerNames[1]);</span><br><span class="line">                    break;</span><br><span class="line">                }</span><br><span class="line">            }//while</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 画游戏头</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        public static void GameShow()</span><br><span class="line">        {</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.Green;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.Yellow;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.DarkGray;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.Blue;</span><br><span class="line">            Console.WriteLine("*****硬核飞行棋******");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.Cyan;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.White;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">            Console.ForegroundColor = ConsoleColor.DarkBlue;</span><br><span class="line">            Console.WriteLine("*********************");</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 初始化地图</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        public static void InitialMap()</span><br><span class="line">        {</span><br><span class="line">            int[] Luckyturn = { 6, 23, 40,55, 69, 83 };</span><br><span class="line">            for (int i = 0; i &lt; Luckyturn.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                //int index = Luckyturn[i];</span><br><span class="line">                Maps[Luckyturn[i]] = 1;</span><br><span class="line">            }</span><br><span class="line">            int[] Landmine = { 5, 13, 17, 33, 38, 50, 64, 80, 94 };</span><br><span class="line">            for (int i = 0; i &lt; Landmine.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Maps[Landmine[i]] = 2;</span><br><span class="line">            }</span><br><span class="line">            int[] Pause = { 9, 27, 60, 93 };</span><br><span class="line">            for (int i = 0; i &lt; Pause.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Maps[Pause[i]] = 3;</span><br><span class="line">            }</span><br><span class="line">            int[] TimeTunnel = { 20, 25, 45, 63, 72, 88, 90 };</span><br><span class="line">            for (int i = 0; i &lt; TimeTunnel.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Maps[TimeTunnel[i]] = 4;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        public static void DrawMap()</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("图例:幸运轮盘:◎   地雷:☆   暂停:▲   时空隧道:卐");</span><br><span class="line">            #region 第一横行</span><br><span class="line">            for (int i = 0; i &lt; 30; i++)</span><br><span class="line">            {   //玩家A与玩家B坐标相同，都在地图上，画一个尖括号</span><br><span class="line">                Console.Write(DrawStringMap(i));</span><br><span class="line">            }//for</span><br><span class="line"> #endregion</span><br><span class="line">            Console.WriteLine();</span><br><span class="line">            #region 第一竖行</span><br><span class="line">            for (int i = 30; i &lt; 35; i++)</span><br><span class="line">            {</span><br><span class="line">                for (int j = 0; j &lt;= 28; j++)</span><br><span class="line">                {</span><br><span class="line">                    Console.Write("  ");</span><br><span class="line">                }</span><br><span class="line">                Console.Write(DrawStringMap(i));</span><br><span class="line">                Console.WriteLine();</span><br><span class="line">            }</span><br><span class="line">            #endregion</span><br><span class="line">            #region 第二横行</span><br><span class="line">            for (int i = 64; i &gt;= 35; i--)</span><br><span class="line">            {</span><br><span class="line">                Console.Write(DrawStringMap(i));</span><br><span class="line">                //画完第二横行应该换行</span><br><span class="line">            }</span><br><span class="line">            #endregion</span><br><span class="line">            Console.WriteLine();</span><br><span class="line">            #region 第二竖行</span><br><span class="line">            for (int i = 65; i &lt;=69; i++)</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine(DrawStringMap(i));</span><br><span class="line">            }</span><br><span class="line">            #endregion</span><br><span class="line">            #region 第三横行</span><br><span class="line">            for (int i = 70; i &lt;=99; i++)</span><br><span class="line">            {</span><br><span class="line">                Console.Write(DrawStringMap(i));</span><br><span class="line">            }</span><br><span class="line">            #endregion</span><br><span class="line">            //画完最后一行，应该换行</span><br><span class="line">            Console.WriteLine();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 从画地图中抽象出来的一个方法</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="i"&gt;&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">        public static string DrawStringMap(int i)</span><br><span class="line">        {</span><br><span class="line">            string str = "";</span><br><span class="line">            if (PlayerPos[0] == PlayerPos[1] &amp;&amp; PlayerPos[1] == i)</span><br><span class="line">            {</span><br><span class="line">                Console.ForegroundColor = ConsoleColor.DarkYellow;</span><br><span class="line">                str = "&lt;&gt;";</span><br><span class="line">            }</span><br><span class="line">            else if (PlayerPos[0] == i)</span><br><span class="line">            {</span><br><span class="line">                str = "A";</span><br><span class="line">            }</span><br><span class="line">            else if (PlayerPos[1] == i)</span><br><span class="line">            {</span><br><span class="line">                str = "B";</span><br><span class="line">            }</span><br><span class="line">            else</span><br><span class="line">            {</span><br><span class="line">                switch (Maps[i])</span><br><span class="line">                {</span><br><span class="line">                    case 0:</span><br><span class="line">                        Console.ForegroundColor = ConsoleColor.Red;</span><br><span class="line">                        str = "□"; break;</span><br><span class="line">                    case 1:</span><br><span class="line">                        Console.ForegroundColor = ConsoleColor.DarkMagenta;</span><br><span class="line">                        str = "◎"; break;</span><br><span class="line">                    case 2:</span><br><span class="line">                        Console.ForegroundColor = ConsoleColor.DarkRed;</span><br><span class="line">                        str = "☆"; break;</span><br><span class="line">                    case 3:</span><br><span class="line">                        Console.ForegroundColor = ConsoleColor.Yellow;</span><br><span class="line">                        str = "▲"; break;</span><br><span class="line">                    case 4:</span><br><span class="line">                        Console.ForegroundColor = ConsoleColor.Green;</span><br><span class="line">                        str = "卐"; break;</span><br><span class="line">                }//switch</span><br><span class="line">            }//else</span><br><span class="line">            return str;</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 玩游戏</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        public static void PlayGame(int PlayerNumber)</span><br><span class="line">        {</span><br><span class="line">            Random r = new Random();</span><br><span class="line">            int rNumber = r.Next(1, 7);</span><br><span class="line">            Console.WriteLine("{0}按任意键开始掷骰子", PlayerNames[PlayerNumber]);</span><br><span class="line">            Console.ReadKey(true);</span><br><span class="line">            Console.WriteLine("{0}掷出了{1}", PlayerNames[PlayerNumber], rNumber);</span><br><span class="line">            PlayerPos[PlayerNumber] += rNumber;</span><br><span class="line">            ChangePos();</span><br><span class="line">            Console.ReadKey(true);</span><br><span class="line">            Console.WriteLine("{0}按任意键开始行动", PlayerNames[PlayerNumber]);</span><br><span class="line">            Console.ReadKey(true);</span><br><span class="line">            Console.WriteLine("{0}行动完了", PlayerNames[PlayerNumber]);</span><br><span class="line">            Console.ReadKey(true);</span><br><span class="line">            //玩家a可能踩到玩家b，方块 幸运轮盘 地雷 暂停 时空隧道</span><br><span class="line">            if (PlayerPos[PlayerNumber] == PlayerPos[1- PlayerNumber])</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine("玩家{0}踩到了玩家{1},玩家{2}退六格", PlayerPos[PlayerNumber], PlayerPos[1- PlayerNumber], PlayerPos[1- PlayerNumber]);</span><br><span class="line">                PlayerPos[1- PlayerNumber] -= 6;</span><br><span class="line">                ChangePos();</span><br><span class="line">                Console.ReadKey(true);</span><br><span class="line">            }</span><br><span class="line">            else</span><br><span class="line">            {</span><br><span class="line">                switch (Maps[PlayerPos[PlayerNumber]])</span><br><span class="line">                {</span><br><span class="line">                    case 0:</span><br><span class="line">                        Console.WriteLine("玩家{0}踩到了方块，安全", PlayerNames[PlayerNumber]);</span><br><span class="line">                        Console.ReadKey();</span><br><span class="line">                        break;</span><br><span class="line">                    case 1:</span><br><span class="line">                        Console.WriteLine("玩家{0}踩到了幸运轮盘，1--交换位置，2--轰炸对方，退六格", PlayerNames[PlayerNumber]);</span><br><span class="line">                        string input = Console.ReadLine();</span><br><span class="line">                        while (true)</span><br><span class="line">                        {</span><br><span class="line">                            if (input == "1")</span><br><span class="line">                            {</span><br><span class="line">                                Console.WriteLine("玩家{0}选择跟玩家{1}交换位置", PlayerNames[PlayerNumber], PlayerNames[1- PlayerNumber]);</span><br><span class="line">                                Console.ReadKey(true);</span><br><span class="line">                                int temp = PlayerPos[PlayerNumber];</span><br><span class="line">                                PlayerPos[PlayerNumber] = PlayerPos[1- PlayerNumber];</span><br><span class="line">                                PlayerPos[1- PlayerNumber] = temp;</span><br><span class="line">                                Console.WriteLine("交换成功,按任意键继续游戏");</span><br><span class="line">                                Console.ReadKey(true);</span><br><span class="line">                                break;</span><br><span class="line">                            }</span><br><span class="line">                            else if (input == "2")</span><br><span class="line">                            {</span><br><span class="line">                                Console.WriteLine("玩家{0}选择轰炸玩家{1}，玩家{2}退六格", PlayerNames[PlayerNumber], PlayerNames[1- PlayerNumber], PlayerNames[1- PlayerNumber]);</span><br><span class="line">                                Console.ReadKey(true);</span><br><span class="line">                                PlayerPos[1- PlayerNumber] -= 6;</span><br><span class="line">                                ChangePos();</span><br><span class="line">                                Console.WriteLine("玩家{0}退了六格", PlayerNames[1-PlayerNumber]);</span><br><span class="line">                                Console.ReadKey(true);</span><br><span class="line">                                break;</span><br><span class="line">                            }</span><br><span class="line">                            else</span><br><span class="line">                            {</span><br><span class="line">                                Console.WriteLine("只能输入1和2，1--交换位置，2--轰炸对方，退六格,请重新输入");</span><br><span class="line">                                input = Console.ReadLine();</span><br><span class="line">                            }</span><br><span class="line">                        }</span><br><span class="line">                        break;</span><br><span class="line">                    case 2:</span><br><span class="line">                        Console.WriteLine("玩家{0}踩到了地雷，退六格", PlayerNames[PlayerNumber]);</span><br><span class="line">                        Console.ReadKey(true);</span><br><span class="line">                        PlayerPos[PlayerNumber] -= 6;</span><br><span class="line">                        ChangePos();</span><br><span class="line">                        break;</span><br><span class="line">                    case 3:</span><br><span class="line">                        Console.WriteLine("玩家{0}踩到了暂停，暂停一回合", PlayerNames[PlayerNumber]);</span><br><span class="line">                        Flags[PlayerNumber] = true;</span><br><span class="line">                        Console.ReadKey(true);</span><br><span class="line">                        break;</span><br><span class="line">                    case 4:</span><br><span class="line">                        Console.WriteLine("玩家{0}踩到了时空隧道，前进十格", PlayerNames[PlayerNumber]);</span><br><span class="line">                        PlayerPos[PlayerNumber] += 10;</span><br><span class="line">                        ChangePos();</span><br><span class="line">                        Console.ReadKey(true);</span><br><span class="line">                        break;</span><br><span class="line">                }//switch</span><br><span class="line">            }//else</span><br><span class="line">            ChangePos();</span><br><span class="line">            Console.Clear();</span><br><span class="line">            DrawMap();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 当玩家的坐标发生改变的时候调用</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        public static void ChangePos()</span><br><span class="line">        {</span><br><span class="line">            if (PlayerPos[0] &lt; 0)</span><br><span class="line">            {</span><br><span class="line">                PlayerPos[0] = 0;</span><br><span class="line">            }</span><br><span class="line">            if (PlayerPos[0] &gt;= 99)</span><br><span class="line">            {</span><br><span class="line">                PlayerPos[0] = 99;</span><br><span class="line">            }</span><br><span class="line">            if (PlayerPos[1] &lt; 0)</span><br><span class="line">            {</span><br><span class="line">                PlayerPos[1] = 0;</span><br><span class="line">            }</span><br><span class="line">            if (PlayerPos[1] &gt;= 99)</span><br><span class="line">            {</span><br><span class="line">                PlayerPos[1] = 99;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">//□◎☆▲卐 拿去复制</span><br></pre></td></tr></tbody></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/24/2022-1-24/" data-id="clmob26ck0004gg94854i75qb" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-8" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/08/2022-1-8/">2022-1-8</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/08/2022-1-8/" class="article-date">
+  <time datetime="2022-01-07T16:00:00.000Z" itemprop="datePublished">2022-01-08</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h2 id="写一个跟try-parse一样性质的方法"><a href="#写一个跟try-parse一样性质的方法" class="headerlink" title="写一个跟try-parse一样性质的方法"></a>写一个跟try-parse一样性质的方法</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int num;</span><br><span class="line">            bool b = int.TryParse("123", out num);</span><br><span class="line">            Console.WriteLine(num);</span><br><span class="line">            Console.WriteLine(b);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        public static bool MyTryParse(string s,out int result)</span><br><span class="line">        {</span><br><span class="line">            result = 0;</span><br><span class="line">            try</span><br><span class="line">            {</span><br><span class="line">                result = Convert.ToInt32(s);</span><br><span class="line">                return true;</span><br><span class="line">            }</span><br><span class="line">            catch</span><br><span class="line">            {</span><br><span class="line">                return false;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="ref参数"><a href="#ref参数" class="headerlink" title="ref参数"></a>ref参数</h2><p>能够将一个变量带入一个方法中进行改变<br>改变完成后，能将改变后的数带出方法<br>参数要求在方法外必须为其赋值，而方法内可以不赋值</p>
+<hr>
+<h2 id="ref参数练习"><a href="#ref参数练习" class="headerlink" title="ref参数练习"></a>ref参数练习</h2><p>使用方法交换两个int类型的变量</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int n1 = 10;</span><br><span class="line">            int n2 = 20;</span><br><span class="line">            Change(ref n1,ref n2);</span><br><span class="line">            Console.WriteLine("{0}，{1}",n1,n2);</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 交换两个int类型的数</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="n1"&gt;第一个数&lt;/param&gt;</span><br><span class="line">        /// &lt;param name="n2"&gt;第二个数&lt;/param&gt;        </span><br><span class="line">        public static void Change(ref int n1,ref int n2)</span><br><span class="line">        {</span><br><span class="line">            n1 = n1 - n2;</span><br><span class="line">            n2 = n1 + n2;</span><br><span class="line">            n1 = n2 - n1;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="params可变参数"><a href="#params可变参数" class="headerlink" title="params可变参数"></a>params可变参数</h2><p>将实参列表中跟可变参数数组类型一致的元素都当做数组的元素来处理<br>params可变参数必须是形参类表中最后一个元素<br>具有唯一性</p>
+<hr>
+<h2 id="params参数练习"><a href="#params参数练习" class="headerlink" title="params参数练习"></a>params参数练习</h2><p>求任意长度数组的和 整数类型的</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_6</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line"></span><br><span class="line">            int sum = GetSum(1, 2, 3, 4, 5);</span><br><span class="line">            Console.WriteLine(sum);</span><br><span class="line">        }</span><br><span class="line">        public static int GetSum(params int[] n)</span><br><span class="line">        {</span><br><span class="line">            int sum = 0;</span><br><span class="line">            for (int i = 0; i &lt; n.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                sum += n[i];</span><br><span class="line">            }</span><br><span class="line">            return sum;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法的重载"><a href="#方法的重载" class="headerlink" title="方法的重载"></a>方法的重载</h2><p>方法的重载指的是方法的名称相同但是方法的参数不同<br>分两种情况：参数个数相同，参数类型就不能相同<br>        参数类型相同，参数个数就不能相同<br>跟方法的返回值无关</p>
+<hr>
+<h2 id="方法的递归：方法自己调用自己"><a href="#方法的递归：方法自己调用自己" class="headerlink" title="方法的递归：方法自己调用自己"></a>方法的递归：方法自己调用自己</h2><h2 id="方法的总和练习"><a href="#方法的总和练习" class="headerlink" title="方法的总和练习"></a>方法的总和练习</h2><p>提示用户输入两个数字，计算这两个数字之间所有整数的和<br>1用户只能输入数字<br>2计算两个数字之间的和<br>3要求第一个数字必须比第二个数字小，就重新输入</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_8</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            //提示用户输入两个数字，计算这两个数字之间所有整数的和</span><br><span class="line">            //1用户只能输入数字</span><br><span class="line">            //2计算两个数字之间的和</span><br><span class="line">            //3要求第一个数字必须比第二个数字小，就重新输入</span><br><span class="line">            Console.WriteLine("请输入第一个数");</span><br><span class="line">            string NumberOne = Console.ReadLine();</span><br><span class="line">            int numberone = GetNumber(NumberOne);</span><br><span class="line">            Console.WriteLine("请输入第二个数");</span><br><span class="line">            string NumberTwo = Console.ReadLine();</span><br><span class="line">            int numbertwo = GetNumber(NumberTwo);</span><br><span class="line">            JudgeNumber(ref numberone, ref numbertwo);</span><br><span class="line">            int sum = GetSum(numberone, numbertwo);</span><br><span class="line">            Console.WriteLine(sum);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        public static int GetNumber(string s)</span><br><span class="line">        {</span><br><span class="line">            while (true)</span><br><span class="line">            {</span><br><span class="line">                try</span><br><span class="line">                {</span><br><span class="line">                    int number = Convert.ToInt32(s);</span><br><span class="line">                    return number;</span><br><span class="line">                }</span><br><span class="line">                catch</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("输入有误！！请重新输入数字");</span><br><span class="line">                    s = Console.ReadLine();</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        public static void JudgeNumber(ref int n1,ref int n2)</span><br><span class="line">        {</span><br><span class="line">            while (true)</span><br><span class="line">            {</span><br><span class="line">                if (n1 &lt; n2)</span><br><span class="line">                {</span><br><span class="line">                    return;</span><br><span class="line">                }</span><br><span class="line">                else</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("第一个数字不能大于第二个数字，请重新输入");</span><br><span class="line">                    string s1 = Console.ReadLine();</span><br><span class="line">                    n1 = GetNumber(s1);</span><br><span class="line">                    Console.WriteLine("请重新输入第二个数字");</span><br><span class="line">                    string s2 = Console.ReadLine();</span><br><span class="line">                    n2 = GetNumber(s2);</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            </span><br><span class="line">        }</span><br><span class="line">        public static int GetSum(int n1,int n2)</span><br><span class="line">        {</span><br><span class="line">            int sum = 0;</span><br><span class="line">            for (int i = n1; i &lt;= n2; i++)</span><br><span class="line">            {</span><br><span class="line">                sum += i;</span><br><span class="line">            }</span><br><span class="line">            return sum;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/08/2022-1-8/" data-id="clmob26cp0009gg941iuc2fxz" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-9" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/08/2022-1-9/">2022-1-8</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/08/2022-1-9/" class="article-date">
+  <time datetime="2022-01-07T16:00:00.000Z" itemprop="datePublished">2022-01-08</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h2 id="方法练习1"><a href="#方法练习1" class="headerlink" title="方法练习1"></a>方法练习1</h2><p>用方法来实现：有一个字符串数组<br>{“马龙”，“迈克尔乔丹”，“雷吉米勒”，“蒂姆邓肯”，“科比布莱恩特”}<br>请输出最长的字符串</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_1_8</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            string[] name = {"马龙","迈克尔乔丹","雷吉米勒","蒂姆邓肯","科比布莱恩特"};</span><br><span class="line">            int MaxLenth = GetLength(name);</span><br><span class="line">            System.Console.WriteLine(MaxLenth);</span><br><span class="line"></span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 求一个数组中字符串最长的长度</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="name"&gt;数组名&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;最长长度&lt;/returns&gt;</span><br><span class="line">        public static int GetLength(string[] name)</span><br><span class="line">        {</span><br><span class="line">            string MaxLength = name[0];</span><br><span class="line">            for (int i = 0; i &lt; name.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                if (name[i].Length &gt; MaxLength.Length)</span><br><span class="line">                {</span><br><span class="line">                     MaxLength= name[i];</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            return MaxLength.Length;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习2"><a href="#方法练习2" class="headerlink" title="方法练习2"></a>方法练习2</h2><p>请计算出一个整数数组的平均值，保留两位小数</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_8</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] Number = { 1, 2, 7 };</span><br><span class="line">            double Eve = GetEve(Number);</span><br><span class="line">            string s = Eve.ToString("0.00");</span><br><span class="line">            Eve = Convert.ToDouble(s);</span><br><span class="line">            Console.WriteLine(Eve);</span><br><span class="line">        }</span><br><span class="line">        public static double GetEve(int[] Number)</span><br><span class="line">        {</span><br><span class="line">            double sum = 0;</span><br><span class="line">            for (int i = 0; i &lt; Number.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                sum += Number[i];</span><br><span class="line">            }</span><br><span class="line">            return sum / Number.Length;</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习3"><a href="#方法练习3" class="headerlink" title="方法练习3"></a>方法练习3</h2><p>接受输入后判断其等级<br>判断依据如下：等级优90-100，等级亮80-89</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("请输入考试成绩");</span><br><span class="line">            int score = Convert.ToInt32(Console.ReadLine());</span><br><span class="line">            string level = GetLevel(score);</span><br><span class="line">            Console.WriteLine("考试等地为{0}", level);</span><br><span class="line">        }</span><br><span class="line">        public static string GetLevel(int score)</span><br><span class="line">        {</span><br><span class="line">            string level = "";</span><br><span class="line">            switch (score / 10)</span><br><span class="line">            {</span><br><span class="line">                case 10:</span><br><span class="line">                case 9: level = "优"; break;</span><br><span class="line">                case 8: level = "良"; break;</span><br><span class="line">                case 7:</span><br><span class="line">                case 6: level = "合格"; break;</span><br><span class="line">                default: level = "不合格"; break;</span><br><span class="line">            }</span><br><span class="line">            return level;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="方法练习4"><a href="#方法练习4" class="headerlink" title="方法练习4"></a>方法练习4</h2><p>反串字符串数组<br>循环数组.length/2次<br>for中循环体<br>{<br>    string temp=name[i];<br>    names[i]=names[names.length-1-i];<br>    names[names.length.length-1-i]=temp;<br>}<br>循环输出；<br>方法二：array.revers（数组名）</p>
+<hr>
+<h2 id="方法练习5"><a href="#方法练习5" class="headerlink" title="方法练习5"></a>方法练习5</h2><p>写一个方法，计算圆的面积和周长</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            //写一个方法，计算圆的面积和周长</span><br><span class="line">            Console.WriteLine("请输入圆的半径长");</span><br><span class="line">            double r = Convert.ToDouble(Console.ReadLine());</span><br><span class="line">            double S, C;</span><br><span class="line">            SandC(r, out S, out C);</span><br><span class="line">            Console.WriteLine("面积为{0}，周长为{1}",S,C);</span><br><span class="line">        }</span><br><span class="line">        public static void  SandC(double r,out double S,out double C)</span><br><span class="line">        {</span><br><span class="line">             S = 3.14 * r * r;</span><br><span class="line">             C = 2 * 3.14 * r;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>计算任意多个数间最大值</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            double Max=GetMax(1, 2, 3, 4, 5, 6);</span><br><span class="line">            Console.WriteLine(Max);</span><br><span class="line">        }</span><br><span class="line">        public static double GetMax(params double[] n)</span><br><span class="line">        {</span><br><span class="line">            double Max = n[0];</span><br><span class="line">            for (int i = 0; i &lt; n.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                if (n[i] &gt; Max)</span><br><span class="line">                {</span><br><span class="line">                    Max = n[i];</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            return Max;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>通过冒泡排序对数组进行升序排序</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_9</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] nums = { 1, 3, 5, 7, 90, 2, 4, 6, 8, 10 };</span><br><span class="line">            Change(nums);</span><br><span class="line">            for (int i = 0; i &lt; nums.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine(nums[i]);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        public static void Change(int[] nums)</span><br><span class="line">        {</span><br><span class="line">            for (int i = 0; i &lt; nums.Length-1; i++)</span><br><span class="line">            {</span><br><span class="line">                for (int j = 0; j &lt; nums.Length-1-i; j++)</span><br><span class="line">                {</span><br><span class="line">                    if (nums[j] &gt; nums[j + 1])</span><br><span class="line">                    {</span><br><span class="line">                        int temp = nums[j];</span><br><span class="line">                        nums[j] = nums[j + 1];</span><br><span class="line">                        nums[j + 1] = temp;</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/08/2022-1-9/" data-id="clmob26cr000agg94hki4dgji" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-3" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/03/2022-1-3/">今天也是充满希望的一天</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/03/2022-1-3/" class="article-date">
+  <time datetime="2022-01-02T16:00:00.000Z" itemprop="datePublished">2022-01-03</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>c#中没有全局变量这个东西<br>但是我们可以通过静态字段来模拟全局变量<br>从而达到函数能获取main函数中的变量</p>
+<hr>
+<h2 id="练习1"><a href="#练习1" class="headerlink" title="练习1"></a>练习1</h2><p>读取输入的整数，定义成方法<br>多次调用（如果用户输入的是数字，则返回，否则提示重新输入）<br>*方法对的功能一定要单一！！<br>*方法中最忌讳的就是提示用户输入的字眼</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("请输入一个数字");</span><br><span class="line">            string input = Console.ReadLine();</span><br><span class="line">            int result = Get(input);</span><br><span class="line">            Console.WriteLine(result);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 这个方法需要判断用户输入是不是数字</span><br><span class="line">        /// 如果用户输入的是数字，则返回，否则提示重新输入</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="num"&gt;输入的数字&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;返回值&lt;/returns&gt;</span><br><span class="line">        public static int Get(string s)</span><br><span class="line">        {</span><br><span class="line">            while (true)</span><br><span class="line">            {</span><br><span class="line">                try</span><br><span class="line">                {</span><br><span class="line">                    int number = Convert.ToInt32(s);</span><br><span class="line">                    return number;</span><br><span class="line">                }</span><br><span class="line">                catch</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("请重新输入");</span><br><span class="line">                    s = Console.ReadLine();</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="练习2"><a href="#练习2" class="headerlink" title="练习2"></a>练习2</h2><p>只能让用户输入yes或者no，如果不是就重新输入</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("请输入yes或者no");</span><br><span class="line">            string answer = Console.ReadLine();</span><br><span class="line">            string ANSWER = GetAnswer(answer);</span><br><span class="line">            Console.WriteLine(ANSWER);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 限定用户只能输入yes或者no</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="answer"&gt;yes或者no&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;用户输入的结果&lt;/returns&gt;</span><br><span class="line">        public static string GetAnswer(string answer)</span><br><span class="line">        {</span><br><span class="line">            while (true)</span><br><span class="line">            {</span><br><span class="line">                if (answer == "yes" || answer == "no")</span><br><span class="line">                {</span><br><span class="line">                    return answer;</span><br><span class="line">                }</span><br><span class="line">                else</span><br><span class="line">                {</span><br><span class="line">                    Console.WriteLine("请重新输入");</span><br><span class="line">                    answer = Console.ReadLine();</span><br><span class="line">                }</span><br><span class="line">            }           </span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="练习3"><a href="#练习3" class="headerlink" title="练习3"></a>练习3</h2><p>计算输入数组的和</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };</span><br><span class="line">            int sum = Plus(num);</span><br><span class="line">            Console.WriteLine(sum);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 计算一个整数类型数组的总和，并返回总和值</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="num"&gt;要求总和的数组&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;总和值&lt;/returns&gt;</span><br><span class="line">        public static int Plus(int[] num)</span><br><span class="line">        {</span><br><span class="line">            int sum = 0;</span><br><span class="line">            for (int i = 0; i &lt; num.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                sum += num[i];</span><br><span class="line">            }</span><br><span class="line">            return sum;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="高级参数"><a href="#高级参数" class="headerlink" title="高级参数"></a>高级参数</h2><p>out参数：侧重于在一个方法中返回多个不同类型的值<br>（如果你在一个方法中，返回多个相同类型的值的时候，可以考虑返回一个数组<br>但是如果返回多个不同类型的值的时候，就不行了，这个时候可以考虑使用out参数）</p>
+<hr>
+<h2 id="out类型练习"><a href="#out类型练习" class="headerlink" title="out类型练习"></a>out类型练习</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">namespace _2022_2_3</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            Console.WriteLine("请输入您的用户名");</span><br><span class="line">            string name = Console.ReadLine();</span><br><span class="line">            Console.WriteLine("请输入您的密码");</span><br><span class="line">            string pwd = Console.ReadLine();</span><br><span class="line">            string msg;</span><br><span class="line">            bool result = IsLogin(name, pwd, out msg);</span><br><span class="line">            Console.WriteLine("登录结果{0}",result);</span><br><span class="line">            Console.WriteLine("登录信息{0}",msg);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">        /// &lt;summary&gt;</span><br><span class="line">        /// 判断登录是否成功</span><br><span class="line">        /// &lt;/summary&gt;</span><br><span class="line">        /// &lt;param name="name"&gt;用户名&lt;/param&gt;</span><br><span class="line">        /// &lt;param name="pwd"&gt;密码&lt;/param&gt;</span><br><span class="line">        /// &lt;param name="msg"&gt;提示信息&lt;/param&gt;</span><br><span class="line">        /// &lt;returns&gt;登录状态提示&lt;/returns&gt;</span><br><span class="line">        public static bool IsLogin(string name, string pwd ,out string msg)</span><br><span class="line">        {</span><br><span class="line">            if (name == "admin" &amp;&amp; pwd == "888888")</span><br><span class="line">            {</span><br><span class="line">                msg = "登录成功！";</span><br><span class="line">                return true;</span><br><span class="line">            }</span><br><span class="line">            else if (name == "admin")</span><br><span class="line">            {</span><br><span class="line">                msg = "密码错误";</span><br><span class="line">                return false;</span><br><span class="line">            }</span><br><span class="line">            else if(pwd == "888888")</span><br><span class="line">            {</span><br><span class="line">                msg = "用户名错误";</span><br><span class="line">                return false;</span><br><span class="line">            }</span><br><span class="line">            else</span><br><span class="line">            {</span><br><span class="line">                msg = "未知错误";</span><br><span class="line">                return false;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="去放松一会"><a href="#去放松一会" class="headerlink" title="去放松一会"></a>去放松一会</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/03/2022-1-3/" data-id="clmob26cm0007gg947eyigks5" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022-1-2" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/02/2022-1-2/">今天你睡饱了吗①</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/02/2022-1-2/" class="article-date">
+  <time datetime="2022-01-01T16:00:00.000Z" itemprop="datePublished">2022-01-02</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h2 id="困"><a href="#困" class="headerlink" title="困"></a>困</h2><p>想着放假调个正常点的作息，昨天硬是到5点没睡着，<br>我现在是一会一个哈欠一会一个，困死了<br>今天是2022年第二天，冲<br>下面是数组的三个练习</p>
+<hr>
+<h2 id="数组练习1"><a href="#数组练习1" class="headerlink" title="数组练习1"></a>数组练习1</h2><p>数组中都是人名，（老杨，老苏，老邹，老虎，老牛，老马）<br>要分割成–&gt;老杨|老苏|老邹|老虎|老牛|老马<br>思路：通过循环，获取每个元素，都累加到字符串中，用|分割</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_2</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            string[] names = { "老杨", "老苏", "老邹", "老虎", "老牛", "老马" };</span><br><span class="line">            string str = null;</span><br><span class="line">            for (int i = 0; i &lt; names.Length-1; i++)</span><br><span class="line">            {</span><br><span class="line">                str += names[i]+"|";</span><br><span class="line">            }</span><br><span class="line">            Console.WriteLine(str+names[names.Length-1]);</span><br><span class="line">            Console.ReadKey();</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="数组练习2"><a href="#数组练习2" class="headerlink" title="数组练习2"></a>数组练习2</h2><p>将一个整数数组每一个元素进行如下处理<br>如果元素为正数，这个位置元素值加一<br>如果元素为负数，这个位置元素值减一，如果元素为0，则不变<br>解题思路：不会去买块豆腐</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_2</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            int[] nums = { 1, -2, 3, -4, 5, 6, 0 };</span><br><span class="line">            for (int i = 0; i &lt; nums.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                if (nums[i] &gt; 0)</span><br><span class="line">                {</span><br><span class="line">                    nums[i] += 1;</span><br><span class="line">                }</span><br><span class="line">                else if (nums[i] &lt; 0)</span><br><span class="line">                {</span><br><span class="line">                    nums[i] -= 1;</span><br><span class="line">                }</span><br><span class="line">                else</span><br><span class="line">                {</span><br><span class="line">                    nums[i] = 0;</span><br><span class="line">                }</span><br><span class="line">                Console.WriteLine(nums[i]);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="数组练习3"><a href="#数组练习3" class="headerlink" title="数组练习3~"></a>数组练习3~</h2><p>将一个数组中元素进行翻转{“我”，“是”，“好人”}-&gt;{“好人”，“是”，“我”}<br>解题思路：*让下标为i的元素与下标为length-1-i的元素交换</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line"></span><br><span class="line">namespace _2022_1_2</span><br><span class="line">{</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            string[] names = { "我", "是", "好人" };</span><br><span class="line">            for (int i = 0; i &lt; names.Length/2; i++)</span><br><span class="line">            {</span><br><span class="line">                string mid = names[i];</span><br><span class="line">                names[i] = names[names.Length - 1 - i];</span><br><span class="line">                names[names.Length - 1 - i] = mid;</span><br><span class="line">            }</span><br><span class="line">            for (int i = 0; i &lt; names.Length; i++)</span><br><span class="line">            {</span><br><span class="line">                Console.WriteLine(names[i]);</span><br><span class="line">            }    </span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>：将数组中元素按从大到小或从小到大的顺序进行排序<br>排序：从第一个元素开始，与后面每个元素进行比较，直到比较完，到第二个元素….</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; nums.Length-1; i++)</span><br><span class="line">            {</span><br><span class="line">                for (int j = 0; j &lt; nums.Length-1-i; j++)</span><br><span class="line">                {</span><br><span class="line">                    if (nums[j] &gt; nums[j + 1])</span><br><span class="line">                    {</span><br><span class="line">                        int mid = nums[j];</span><br><span class="line">                        nums[j] = nums[j + 1];</span><br><span class="line">                        nums[j + 1] = mid;</span><br><span class="line">                    }</span><br><span class="line">                }</span><br><span class="line">            }</span><br></pre></td></tr></tbody></table></figure>
+<p>此为升序排列 如果要降序排序 &gt; 改为&lt;号<br>C#中可以代替排序的代码：Array.Sort（nums）;//只能实现升序<br>                 Array.Reverse(nums);//倒叙排序</p>
+<hr>
+<h2 id="方法（函数）"><a href="#方法（函数）" class="headerlink" title="方法（函数）"></a>方法（函数）</h2><p>函数的语法：<br>[public] static 返回值类型 方法名 （[参数列表]）<br>{<br>    方法体；<br>}<br>方法写完要在main函数中调用<br>调用语法：类名.方法名（[参数]）<br>某些情况下类名是可以省略的，如果写的方法与main函数同在一个类中，可以省略的</p>
+<hr>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>const int num =10；<br>不许重新赋值</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/02/2022-1-2/" data-id="clmob26ci0003gg9497kyc3ia" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-1-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/01/1-1/">新年第一天（2）</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/01/1-1/" class="article-date">
+  <time datetime="2021-12-31T16:00:00.000Z" itemprop="datePublished">2022-01-01</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h2 id="接今天早上的写"><a href="#接今天早上的写" class="headerlink" title="接今天早上的写"></a>接今天早上的写</h2><p>变量只能存一个值，而字段能存多个值<br>字段在规则上要在命名前加上_(下划线) </p>
+<hr>
+<p>俩简单例子：<br>//using System;</p>
+<p>//namespace _2022_1_1<br>//{<br>//    public struct Person<br>//    {<br>//        public string _name;<br>//        public int _age;<br>//        public Gender _gender;<br>//    }<br>//    public enum Gender<br>//    {<br>//        男,<br>//        女<br>//    }</p>
+<p>//    class Program<br>//    {<br>//        static void Main(string[] args)<br>//        {<br>            //定义一个结构类型Person，有三个成员，分别是姓名，性别，年龄，性别用枚举类型<br>            //声明两个Person类型的变量，分别表示张三男18岁，小兰女16岁<br>//            Person zsPerson;<br>//            zsPerson._name = “张三”;<br>//            zsPerson._age = 18;<br>//            zsPerson._gender = Gender.男;</p>
+<p>//            Person xlPerson;<br>//            xlPerson._name = “小兰”;<br>//            xlPerson._age = 16;<br>//            xlPerson._gender = Gender.女;</p>
+<p>//            Console.WriteLine(“{0}，{1}，{2}”, zsPerson._name, zsPerson._age, zsPerson._gender);<br>//            Console.WriteLine(“{0}，{1}，{2}”, xlPerson._name, xlPerson._age, xlPerson._gender);<br>//        }<br>//    }<br>//}<br>//using System;</p>
+<p>//namespace _2022_1_1<br>//{</p>
+<p>//    public struct MyColor<br>//    {<br>//        public int _red;<br>//        public int _green;<br>//        public int _blue;</p>
+<p>//    }<br>//    class Program<br>//    {<br>//        static void Main(string[] args)<br>//        {<br>//定义一个结构叫MyColor，有三个成员，分别定义为int类型的red，green，blue<br>//声明一个MyColor类型的变量，并对其成员赋值，使MyColor可以表示成一个红色<br>//首先要搞清楚红绿蓝是三原色，一切的颜色都可以通过红绿蓝从0-255表示出来<br>//            MyColor mc;<br>//            mc._red = 255;<br>//            mc._blue = 0;<br>//            mc._green = 0;<br>//            Console.WriteLine(“{0}”,mc);<br>//            Console.ReadKey();<br>//        }<br>//    }<br>//}</p>
+<hr>
+<p>数组<br>一次性存储多个相同类型的变量（结构是存储不同）<br>语法：数组类型[] 数组名=new 数组类型[数组长度]；<br>数组长度一旦固定了，就不能再被改变了<br>int数组不赋值 默认为0<br>string数组不赋值 默认为 null（null不是空，表示为开空间）<br>bool数组不赋值 默认为false<br>数组的声明方式int [] nums={1,2,4,5};<br>要不就是从[0]开始一个一个循环赋值<br>还有int [] nums=new int[3] {1,2,3};(不推荐)<br>还有int [] nums =new int[] {1,2,3};(不推荐)</p>
+<hr>
+<p>数组的应用/练习<br>using System;</p>
+<p>namespace jichu<br>{<br>    class Program<br>    {<br>        static void Main(string[] args)<br>        {<br>            //练习1，从整数数组中取出最大的整数，最小整数，总和，平均值<br>            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };<br>            int max = int.MinValue;//nums[0];<br>            int min = int.MaxValue;//nums[0];<br>            int sum = 0;<br>            for (int i = 0; i &lt; nums.Length; i++)<br>            {<br>                if (nums[i] &gt; max)<br>                {<br>                    max = nums[i];<br>                }<br>                if (nums[i] &lt; min)<br>                {<br>                    min = nums[i];<br>                }<br>                sum += nums[i];<br>            }<br>            Console.WriteLine(“这个数组的最大值是{0},最小值是{1},总和为{2},平均数是{3}”,max,min,sum,sum/nums.Length);<br>            Console.ReadKey();<br>        }<br>    }<br>}</p>
+<hr>
+<p>c#内容就写到这里了<br>这里我就不装了，2022-1-1曼城2-1逆转阿森纳<br>虽然赛程密集，但是这场左后卫的阿克真的不适应这个位置和左边锋的斯特林没有任何配合<br>导致b席和丁丁得回撤到后场拿球，更何况曼城是著名的无锋阵，没有支点，致使阿森纳从全场看下来<br>都是更加优秀的一边<br>关于点球和两黄变一红，我觉得没得洗，两强相遇，更加兴奋的球队更能占据主动，把握场上局势<br>阿森纳确实做得好，但是越兴奋越容易上头，把握不好自己的情绪就是拿红牌下去的主要原因<br>这场踢阿森纳确实如瓜瓜所说进5年内最强的阿森纳，确实未来可期<br>但是我的主队还是曼城，罗德里最后时刻的绝杀太帅了，这场的3分实在是太关键了<br>是这个赛季英超冠军上比较关键的一场了，gooooooal~~<br><img src="/.com//%E7%BB%9D%E6%9D%80.jpg" alt="绝杀"></p>
+<hr>
+<p>我这个寒假尽量做到天天写blog好吧，也是督促我自己早点掌握c#和u3d<br>今天还是1月1号，祝朋友们恭喜发财，万事顺意，再见！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/01/1-1/" data-id="clmob26cf0002gg94873id86h" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-2022" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/01/2022/">新年第一天</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/01/2022/" class="article-date">
+  <time datetime="2021-12-31T16:00:00.000Z" itemprop="datePublished">2022-01-01</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>枚举与别的类型之间的转换<br>枚举类型默认是跟int可以转换<br>复习一哈 强制类型转换<br>int n=待转换的类型（要转换的值）<br>例：(int 强制转换成枚举类型)<br>QQstate state=QQstate.Online;<br>int n =（int）state</p>
+<p>（枚举类型强转int类型）<br>int n1=3；<br>QQstate state=（QQstate）n1；<br>console.writeline(state);<br>console.readkey();<br>复习：折叠不想看到的内容 #region  #endregion</p>
+<p>*所有类型都能转换成string类型 用tostring<br>例：int n1=10;<br>double<br>decimal都行<br>string s =n1.ToString();<br>console.writeline(s);<br>console.readkey();<br>结果为10<br>例：（枚举-&gt;string）<br>QQstate state =QQstate.online;<br>string s =state.ToString();<br>console.writeline(s);<br>console.readkey(); </p>
+<p>*将字符串转换成枚举类型<br>回忆一下：convert.toint32()<br>所以这里要用到Enum.parse（）；<br>例：string s =”0”;<br>QQstate state =(QQstate)Enum.parse(typeof(QQstate),s);<br>console.writeline(state);<br>console.readkey();<br>输出值为枚举第一个值<br>总结：枚举类型默认是与int兼容，可通过强转相互转换<br>当转换枚举中没有的值时，不抛异常，直接显示数字<br>同样也能与string转换，如果枚举转换成string，直接用tostring<br>如果将string转换成枚举要用一下代码：（要转换的枚举类型）Enum.Parse(typeof（要转换的枚举类型），“要转换的字符转”)；<br>转换的是数字，枚举没有，不抛异常<br>转换为文本，枚举中没有，抛异常</p>
+<hr>
+<p>这里有个简单的练习</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">namespace _2021_12_30</span><br><span class="line">{</span><br><span class="line">    // public enum gender</span><br><span class="line">    //{</span><br><span class="line">    //    男,</span><br><span class="line">    //    女</span><br><span class="line">    //}</span><br><span class="line">    public enum state{//state这里首字母都要大写，要求</span><br><span class="line">        online=1,</span><br><span class="line">        offline,</span><br><span class="line">        leave,</span><br><span class="line">        busy,</span><br><span class="line">        qMe</span><br><span class="line">    }</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            //int n = 10;</span><br><span class="line">            //gender gender = gender.男;</span><br><span class="line">            //Console.WriteLine("Hello World!");</span><br><span class="line">            //提示用户输入一个在线状态，我们接收，将输入转换成枚举类型，再打印到控制台中</span><br><span class="line">            Console.WriteLine("请输入您的在线状态,1--online 2--offline 3--leave 4--busy 5--qMe");</span><br><span class="line">            string input = Console.ReadLine();</span><br><span class="line">            switch (input)</span><br><span class="line">            {</span><br><span class="line">                case "1": state s1 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s1);</span><br><span class="line">                    break;</span><br><span class="line">                case "2": state s2 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s2);</span><br><span class="line">                    break;</span><br><span class="line">                case "3": state s3 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s3);</span><br><span class="line">                    break;</span><br><span class="line">                case "4": state s4 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}", s4);</span><br><span class="line">                    break;</span><br><span class="line">                case "5":state s5 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}", s5);</span><br><span class="line">                    break;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>结构：可以帮助我们一次性声明多个不同类型的变量<br>语法：[public] struct 结构名（这里跟enum一样结构名首字母要大写）<br>{<br>    成员；<br>}</p>
+<hr>
+<p>今天是2022年1月1日，希望把去年不开心的忘记<br>新的一年发发出传奇，叮叮都能振到刀，u3d学习顺利，考研顺利，找到个npy<br>祝我身边的朋友身体健康，事事顺心<br><img src="/.com//%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90.jpg" alt="新年快乐"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/01/2022/" data-id="clmob26cw000egg94h3c05z8l" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-10-22" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/10/22/10-22/">今天比较有空</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/10/22/10-22/" class="article-date">
+  <time datetime="2021-10-21T16:00:00.000Z" itemprop="datePublished">2021-10-22</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>开学也是过了很久，主要就是记录一下这一段时间发生了什么<br>虽然这个学期的课不是很多，懂的都懂，毕竟很蛮多线上课的<br>但为什么不想写呢，主要还是我懒</p>
+<hr>
+<p>首先就是这个东西<br><img src="/.com//VR.jpg" alt="游戏机"><br>哇这个东西真的没有必要，没有之前心心念念，有了之后么基本就是没怎么玩过<br>花几千块真的不值，还不如多搓几顿，现在我把它跟我的零食放在一起，也算每<br>天还能碰到两下不会落下什么灰。<br>如果对VR很感兴趣，或者是想每天锻炼的朋友，可以考虑入手<br>如果只是想玩玩，没必要，我是大傻呗</p>
+<hr>
+<p>你别看东盛每次都是排队排的满满当当的<br><img src="/.com//%E4%B8%9C%E7%9B%9B.jpg" alt="吃饭"><br>第一次去我真的觉得还行<br>第二次就感觉品种太少了，真的不太行<br>肉的质量其实还蛮不错，茶也还行，也就这还行了<br>那个烤生蚝的师傅，真的能磨洋工，两个小时就做了一次<br>如果下一次没有人邀请我去，我自己是不会去的，好吧<br>还不如楼下的牛牛<br>说到这里，脸上长痘痘的朋友要小心楼下的老阿姨，他会让你去好像5楼，<br>不知道要干啥，听说是给你整半个脸，然后另外半个要收费，总不能免费<br>体验半个出去吧，那肯定很奇怪<br>但是像我们这么聪明的孩子，肯定不会上老阿姨的当啦~</p>
+<hr>
+<p><img src="/.com//a.jpg" alt="超级植物公司"><br><img src="/.com//b.jpg" alt="超级植物公司"><br><img src="/.com//c.jpg" alt="超级植物公司"><br>这几张照片反正不是我拍的，去的是那个好像叫超级植物公司<br>我同学大众点评上找的，本来以为能消磨几个小时时间，本来以为是个什么展览<br>的地方<br>结果!结果！！结果！！！<br>就是一个小商店，卖跟植物有关的环保物品的<br>还有就是这是在一个像小厂房一样的地方，都是摄影师带客人拍照的<br>但是我觉得不行，我也不会带我以后的女朋友来这种地方<br>直接X掉</p>
+<hr>
+<p>不管说这种峰会是什么性质，是那种几个老板或者几个投资人举办的一种带<br>合作性质还是怎么样的，对于我来说确实是见了见世面<br>最主要还是少了节课，嘻嘻嘻<br><img src="/.com//q.jpg" alt="峰会"><br><img src="/.com//w.jpg" alt="峰会"><br>滴水湖里面那个酒店的环境还是很不错的<br>本来说是包午饭的，然后我们看到了下面这张图<br><img src="/.com//p.jpg" alt="峰会"><br>没想到听个峰会还能吃个自助，直接爽歪歪<br>结果，就<br><img src="/.com//g.jpg" alt="峰会"></p>
+<hr>
+<p>还有什么呢我想想<br>永劫无间我还是很轻松上了个陨星，还是很满足的<br>学校的一等奖学金差一点还是很可惜，只能混个二等，这个学校没有奖学金才不正常<br>对于未来一年还是看的挺清晰的，玩好最后几个月，好好享受大学生活<br>好像我们两个寝室就我还没有女朋友了，这几个b也天天催我，就我们这个<br>专业怎么去认识女生嘛，我又不是社牛，更何况在原来有很多痣的情况下<br>又开始发痘痘了，我mm好像比我还捉急，又涂这涂那的，好像一时半会也好不了<br>反正要是能上岸的话，我一定好好考虑一下<br><img src="/.com//fdw.jpg" alt="照片"></p>
+<hr>
+<p>英雄联盟手游其实还不错的，就是年纪大了，手指已经不灵活了，还是敲键盘更加熟练<br>就看看好友上上线，看一看那个…..，就可以了……<br>我入手仙剑系列真的是因为仙剑3是我童年电视剧比较喜欢的了<br>仙剑7玩下来真的，只能说便秘，它之前引以为傲的剧情已经消失了<br>还好只是买的标准版，里面好像送的小礼品，如果有想要的我就直接送了<br>（好像就两个徽章，一个书签）我没图，东西在学校里</p>
+<hr>
+<p>下次写blog也不知道是什么时候了，反正想到就写呗，有缘再见</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/10/22/10-22/" data-id="clmob26cc0001gg942kchc141" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    <a class="extend prev" rel="prev" href="/">Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next</a>
+  </nav>
+  
+</section>
+</div>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-bar-chart"></i> <span id="busuanzi_value_site_pv"></span></li>
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

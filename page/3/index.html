@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="jumbotron">
+  <div class="video">
+    
+    <div class="video-frame">
+      <img src="/images/ocean/overlay-hero.png" alt="Decorative image frame">
+    </div>
+    
+    <div class="video-media">
+      <video playsinline="" autoplay="" loop="" muted="" data-autoplay="" poster="/images/ocean/ocean.png"
+        x5-video-player-type="h5">
+        <source src="/images/ocean/ocean.mp4" type="video/mp4">
+        <source src="/images/ocean/ocean.ogv" type="video/ogg">
+        <source src="/images/ocean/ocean.webm" type="video/webm">
+        <p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="video-inner text-center text-white">
+      <h1><a href="/">fdw&#39;blog</a></h1>
+      <p></p>
+      <div><img src="/images/hexo-inverted.svg" class="brand" alt="fdw&#39;blog"></div>
+    </div>
+    <div class="video-learn-more">
+      <a class="anchor" href="#landingpage"><i class="fe fe-mouse"></i></a>
+    </div>
+  </div>
+</section>
+<div id="landingpage">
+  <section class="outer">
+  <article class="articles">
+    
+    <h1 class="page-type-title"></h1>
+    
+    
+    <article id="post-9-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/09/01/9-1/">枚举</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/09/01/9-1/" class="article-date">
+  <time datetime="2021-08-31T16:00:00.000Z" itemprop="datePublished">2021-09-01</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>三元表达式<br>表达式1？表达式2：表达式3；<br>表达式1一般为一个关系表达式<br>如果表达式1为true 整个3元表达式为表达式2<br>如果表达式2为false 整个3元表达式为表达式3<br>*表达式2的结果类型必须与表达式3的结果类型一致，并且也要跟整个三元表达式的结果类型一致</p>
+<hr>
+<p>产生随机数<br>1、创建能够产生随机数的对象<br>没有对象 new一个<br>例：random r=new random（）；<br>r就是对象<br>2、让产生随机数的对象调用方法来产生随机数<br>r.Next()来产生随机数<br>int rnumber=r.Next（1,10）//返回一个1-9的随机数，左闭右开区间</p>
+<hr>
+<p>*常量<br>声明常量的语法：const 变量类型 变量名=值；<br>最大特点就是不能被重新赋值</p>
+<hr>
+<p><em>枚举<br>语法：<br>[public] enum 枚举名<br>{<br>    值1，<br>    值2，<br>    值3，<br>    ……<br>}<br>public:访问修饰符 公开的 哪都可以访问<br>enum:关键字，声明枚举的关键字<br>枚举名:要符合Pascal命名规范<br><em>将枚举写到命名空间下，类的外面（整个工程都能用）<br>枚举就是一个简单的</em></em>变量类型** 只是声明、赋值、使用方式不同 本质还是存储数据的<br>例：public enum Gender<br>{<br>    男，<br>    女<br>}//声明枚举 gender<br>Gender gender=Gender.男；<br>-&gt;变量类型 变量名=值<br>这里的Gender就是自己建的变量类型<br>*枚举和int和string之间的类型转换<br>枚举类型默认可以和int类型进行转换 和int类型是兼容的<br>例：int n=（int）state这里的state是枚举类型<br>//首先所有类型都能转换成string类型 调用tostring（）；<br>int n1=10；<br>string s=n1.ToString（）；<br>枚举也不例外</p>
+<p>*将字符串换成枚举类型//比较麻烦的<br>例子：    string s=“0”<br>    枚举类型 state=（枚举类型）Enum.Parse(typeof（枚举类型）,s)<br>    //调用parse方法是为了让他帮我们将一个字符串类型转换成枚举类型</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/01/9-1/" data-id="clmob26d4000lgg94c4il5oob" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-8-24" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/08/30/8-24/">要开学啦，作业补不完了好紧张^^</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/08/30/8-24/" class="article-date">
+  <time datetime="2021-08-29T16:00:00.000Z" itemprop="datePublished">2021-08-30</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>8-24<br>for循环<br>for（循环体1；循环体2；循环体3）<br>{<br>    循环体；<br>}<br>表达式1位声明环境变量 记录循环次数<br>表达式2为循环条件<br>表达式3一般为改变循环条件的代码</p>
+<hr>
+<p>8-29<br>试着让自己静下来<br>在这个快节奏的生活中<br>不必让自己时刻忙碌起来<br>不需要滴滴滴的消息<br>不需要刷刷刷的游戏<br>不需要为了..而..<br>试着让自己放空<br>让自己的灵魂畅游整个世界<br>幻想着一切自己从前不敢想的事情<br>回忆自己的过去<br>回忆自己的错误<br>回忆那仅剩的几丝美好<br>或许有的错误不可补救<br>但那又怎么样呢<br>我从不质疑自己的决定<br>长路漫漫<br>在自己感兴趣的道路上不断爬行<br>结识志同道合的三两好友<br>在每天都在改变的代码中穿行<br>为了自己的理想不断努力<br>就够了<br>（自己nt 整天想些有的没的 直接就学不了）</p>
+<hr>
+<p>tip：逆向for循环 forr两下tab<br>水仙花数指的是百位的立方+十位的立方+个位的立方==这个数字<br>console.write();跟\n性质一样 换行</p>
+<hr>
+<p>8-30<br>怎么形容我现在的状态呢<br>就是挺烦躁的<br>感觉又很多事压在心里<br>但其实又什么事都没有<br>玩了几分钟游戏<br>更烦躁了<br>也不太想跟他们出去玩<br>就整个人 挺压抑的<br>很烦~<br>（或许是自己今日下午看了会直播，以前<br>一个战队的好兄弟，由于很多原因，能吵得很严重那种<br>）或许自己 或许别人 对得起自己就行吧</p>
+<hr>
+<p>*将数字转化成想要的数字类型可以用：<br>convert.toint32(“3”);使用convert成功运行 失败抛出异常<br>还可以用int.parse(“3”);与convert结果运行一模一样<br>toint32本质上是调用了int.parse 所以本质上是一样的<br>但是parse这个语句内部效率更高 不过可以忽略不计<br>除了int.parse还有double decimal.parse<br>**int.tryparse<br>尝试将字符串转换成int类型<br>例：<br>int number =0;<br>bool b=int.TryParse(“123”,out number);<br>cw(b);<br>cw(number);<br>转换成功将“123”变成number 输出 并返回true<br>失败的话 number返回 0 并返回false<br>不会抛出异常<br>性能相对于更高<br>tryparse是一个方法（函数）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/08/30/8-24/" data-id="clmob26d6000mgg947hb5frlm" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-8-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/08/01/8-1/">八月第一天</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/08/01/8-1/" class="article-date">
+  <time datetime="2021-07-31T16:00:00.000Z" itemprop="datePublished">2021-08-01</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>逻辑与 优先级 高于 逻辑或<br>判断闰年什么的就不说了 挺简单的<br>ctrl+k+d要记住啊 排版很重要！！<br>最后一行代码后留三个大括号<br>学个c# 车轱辘都碾到脸上了 <del>.</del>哧溜哧溜</p>
+<hr>
+<p>等哪天闲的没事干 把这个博客的界面好好搞一下<br>这个spfk的源代码我还没看过<br>顺便可以整理一下当时搞这个博客的过程<br>我记得我好像搞了一整天<br>毕竟都是报错</p>
+<hr>
+<p>古剑3刚开始这个剧情是真的不错<br>景色也很好 希望我预购的仙剑7至少是这个高度好吧</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/08/01/8-1/" data-id="clmob26d2000igg94h2ik5db9" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-7-31" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/31/7-31/">7-31</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/31/7-31/" class="article-date">
+  <time datetime="2021-07-30T16:00:00.000Z" itemprop="datePublished">2021-07-31</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>不兼容的类型转换：<br>比如string与int 或者string与double<br>需要用到convert类型转换<br>例子：string s =“123”；<br>          double d= convert.todouble(s);<br>          int n =convert.toint32(s);<br>          console.writeline(n);<br>          console.writeline(d);<br>          console.readkey();<br>但是用convert进行转换的时候需要满足能转换<br>如果是abc这种转换成double 就不成立</p>
+<p>*console.readline（）接受用户的数据的时候一定是string类型<br>会涉及到类型转换<br><em>如果算数两边都是int型 但是答案是double型 左边用double接收 还是int<br>除非右边有一个转换成double型 可以</em>0.1</p>
+<p>++ – 自加自减 值相同<br>加加减减在后 先取值后运算<br>加加减减在前 先运算后取值</p>
+<p>一元运算符（一个操作数完成）优先级高于二元运算符（两个或以上操作数+ -））</p>
+<p>关系运算符（略）&gt;&lt;   &gt;=   &lt;=…….</p>
+<p>bool类型 描述对错 true false<br> &amp;&amp;（与） ||（或） ！（非）</p>
+<p>没多少好说的 就到这里吧</p>
+<hr>
+<p>有没有好看的番啊 都看的差不多了<br>  ヽ（≧□≦）ノ</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/31/7-31/" data-id="clmob26cx000fgg9435ejaeeq" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-7-26" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/26/7-26/">7-26</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/26/7-26/" class="article-date">
+  <time datetime="2021-07-25T16:00:00.000Z" itemprop="datePublished">2021-07-26</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>网线分为 568A 和568B<br>568A主要应用于交叉线 什么意思呢 就是网线两头 一端为568A 另一端为568B<br>线序的排布为 白绿 绿 白橙 蓝 白蓝 橙 白棕 棕<br>568B则主要应用于直连线 意思就是网线两头都是为568B排布<br>568B的线序排布为白橙 橙 白绿 蓝 白蓝 绿 白棕 棕</p>
+<p>过去568A和568B是要分情况使用的 在交换机 HUB PC 路由器之间有着明确的划分的<br>但是随着科技的发展 这种需要辨别的情况就日渐减弱<br>在我们国家最常见的就是568B 这种线序排布<br>已经满足我们日常生活的需要了</p>
+<p>虽然分为8根线 但是真正起作用的还是只有四根 为白橙 橙 白绿 绿 对用B的 1 2 3 6这四根<br>另外 4 5 号线对应的蓝 白蓝 起到的是电话线  7 8 白棕 棕 则是监控线</p>
+<p>真正做这个网线其实很容易 没什么好说的<br>为什么会聊到这个呢 主要是实习的时候要求帮个忙 但是我不会 老尴尬了<br>虽然是学的软件 但是呢 我觉得这种技能还是比较基础的 就记录下来了<br>另外还有些测试硬盘 重装系统 安装盗版windows 哈哈哈就更没什么好说的了~</p>
+<p>c# （第几天 忘记了）<br>还是很基础的一天：</p>
+<ul>
+<li>连接两个字符串 （当+两边有一边为字符串就是起这个作用）<br>占位符：这个东西在java好像没遇到过 c里面不记得了<br>c#中占位符是特别重要的一个符号了<br>{0}{1}{2}类似这种 输出的时候：Console.WriteLine(“要输出的是{0}{1}”,n1,n2);<br>n1,n2之前定义过的 比之前用+没那么容易出错<br>多填坑 不报错 没实际效果<br>少填了坑 出现异常（但是语法并没有错误，不过在程序运行期间出现问题，使得程序不能正常运行）<br>占位符最终是按照挖坑的顺序输出<br>占位符在一个输出语句中始终要从{0}开始 不管之前写到哪里<br>{0:0.00}表示小数点后保留两个小数</li>
+</ul>
+<p>交换两个数字 不用第三方变量<br>a=a+b<br>b=a-b<br>a=a-b</p>
+<p>接收用户在控制台的输入Console.ReadLine();<br>但是需要定义一个字符串类型的变量来存储输入的数据string<br>例：string a = Console.ReadLine();</p>
+<p>转义符 ‘\’加一个字符组成一个由特殊意义的字符：<br>\n 换行<br>"表示一个英文下的双引号<br>\t 表示一个tab键的空格 多用于排版<br>\b 表示一个退格键 放在字符串两边没有效果<br>\表示一个\</p>
+<p>@符号写在“”之前表示让\不作为转义符 单纯作为一个\<br>第二个作用是保留原格式输出</p>
+<p>在char中 只能写一个字符 但是在单引号之间写比如一个\b 此处的\表示转义的作用<br>这个\表示的是backspace 即退格键</p>
+<p>算数运算符</p>
+<ul>
+<li><ul>
+<li><ul>
+<li> /（整除）   % (取余)  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>要求等号两边参与操作数的类型必须一致，如果不一致，满足下列条件，发生隐式转换<br>类型兼容 且 目标类型大于源类型：比如int转换成 double<br>如果要将double转换成int 需要强制类型转换<br>（待转换的类型）要转换的值；<br>比如说d=300.6<br>         int n =（int）d；<br>最后会输出300</p>
+<p>头疼 gaming ^_^</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/26/7-26/" data-id="clmob26cv000dgg94afe6fp97" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-卧槽，管" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/">卧槽，管</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/" class="article-date">
+  <time datetime="2021-07-17T16:45:53.000Z" itemprop="datePublished">2021-07-18</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>谢谢你 泽元 你就是未来战士</p>
+<p><img src="/.com//%E6%B3%BD%E5%85%83.jpg" alt="泽元"><br><img src="/.com//%E9%A2%84%E6%B5%8B%E5%9B%BE.jpg" alt="泽元"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/" data-id="clmob26dc000pgg942b6w1yqm" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-7.18" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/17/7.18/">咕咕咕</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/17/7.18/" class="article-date">
+  <time datetime="2021-07-16T16:00:00.000Z" itemprop="datePublished">2021-07-17</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>// 都是这样注释的 没的区别 注销和解释<br>单行注释//<br>多行注释  /* 内容*/<br>文档注释 /// 用来解释类和方法</p>
+<p>vs常用快捷键：<br>ctrl+k+d 快速对齐 (好像真的没有什么用)<br>ctrl+z 撤销<br>ctrl+s 保存<br>ctrl+j 快速弹出智能提示 没用！！<br>shift+home<br>shift+end 快速选中行、行尾切换<br>ctrl+k+c注释所选代码<br>ctrl+k+u取消所选代码的注释</p>
+<p>#region<br>#endregion 此两行用于折叠冗余代码</p>
+<p>数据类型 没有什么好说的<br>char(只能存一个’x’) string字符串”xxx”<br>decimal类型 后缀要加m 不加m转换为double类型<br>称其为金钱类型</p>
+<p>命名规范：第一个单词首字母小写后面单词首字母都要大写 多用于变量<br>    每个单词首字母都要大写 多用于类名<br>    ¿ ¿ ¿<br>虽然没学到什么 但是看得我好累啊 休息 休息去</p>
+<p>好久不玩 pubg 以前买了不玩是因为我是在是太菜了<br>这几天天天训练场练枪 发现这个枪是真的难压 也太飘了<br>要不是有人陪我一起玩 真的没几天真的是又有点劝退我了<br>我还是适合那种种种地 看看剧情的养身游戏啊~</p>
+<p><img src="/2021/07/17/7/%E6%9F%92.jpg" alt="沙雕图"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/17/7.18/" data-id="clmob26cy000ggg944jpa037v" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-七月十五" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/">辛丑六月初六</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/" class="article-date">
+  <time datetime="2021-07-14T16:00:00.000Z" itemprop="datePublished">2021-07-15</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>为了unity学c#好吧<br>听了一会确实跟java差不多 可以边划边听 很nice</p>
+<p>大概好像是：<br>using 来调用包<br>namespace 项目名<br>{<br>    class 类名{<br>            main主方法{}<br>    }<br>}</p>
+<p>他讲的好多都是.Net的 用的都是visual studio 就是听一听<br>我就是只学c#</p>
+<p>Console.WriteLine(“hello world”);<br>Console.Readkey();  // 暂停当前程序等待用户按下任意键继续 并且这个按下的键会显示在我们的控制台中</p>
+<p>卧槽这个VS 生成 解决方案能直接告诉你哪里错了 要输入什么 这不比c java 找错误来的方便</p>
+<p>第一天的课确实无聊 终于可以玩游戏啦<br>有人安利我玩这个勇敢的心：世界大战 说是能让人玩哭 那我是不信的</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/15/%E4%B8%83%E6%9C%88%E5%8D%81%E4%BA%94/" data-id="clmob26dd000qgg94be810v39" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-暑假" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/07/14/%E6%9A%91%E5%81%87/">暑假</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/14/%E6%9A%91%E5%81%87/" class="article-date">
+  <time datetime="2021-07-13T16:00:00.000Z" itemprop="datePublished">2021-07-14</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <p>暑假真的天天跟好友玩游戏确实是很快乐的一件事<br>但是每次一放假就又想着学 啊哈哈 我确实有什么大病<br>unity制作是基于c#<br>听说c#跟java是好兄弟<br>我给我自己大概2-3周把c#入门先学会 也有可能会更长<br>毕竟别人叫我打游戏我也不太会拒绝<br>争取在开学前能初步了解和使用unity<br>（今天踢球受伤了 难受）<br>好希望暑假是充实且有意思的（约我出去玩 我也想天天噶在外面 叫我我是不会拒绝的¿）</p>
+<p><img src="/.com//%E9%95%87%E6%A5%BC.jpg" alt="柒柒柒"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/14/%E6%9A%91%E5%81%87/" data-id="clmob26de000rgg94apgb7im7" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    <a class="extend prev" rel="prev" href="/page/2/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+  
+</section>
+</div>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-bar-chart"></i> <span id="busuanzi_value_site_pv"></span></li>
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

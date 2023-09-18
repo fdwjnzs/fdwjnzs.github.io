@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    新年第一天 |
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-2022" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  新年第一天
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/01/2022/" class="article-date">
+  <time datetime="2021-12-31T16:00:00.000Z" itemprop="datePublished">2022-01-01</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <p>枚举与别的类型之间的转换<br>枚举类型默认是跟int可以转换<br>复习一哈 强制类型转换<br>int n=待转换的类型（要转换的值）<br>例：(int 强制转换成枚举类型)<br>QQstate state=QQstate.Online;<br>int n =（int）state</p>
+<p>（枚举类型强转int类型）<br>int n1=3；<br>QQstate state=（QQstate）n1；<br>console.writeline(state);<br>console.readkey();<br>复习：折叠不想看到的内容 #region  #endregion</p>
+<p>*所有类型都能转换成string类型 用tostring<br>例：int n1=10;<br>double<br>decimal都行<br>string s =n1.ToString();<br>console.writeline(s);<br>console.readkey();<br>结果为10<br>例：（枚举-&gt;string）<br>QQstate state =QQstate.online;<br>string s =state.ToString();<br>console.writeline(s);<br>console.readkey(); </p>
+<p>*将字符串转换成枚举类型<br>回忆一下：convert.toint32()<br>所以这里要用到Enum.parse（）；<br>例：string s =”0”;<br>QQstate state =(QQstate)Enum.parse(typeof(QQstate),s);<br>console.writeline(state);<br>console.readkey();<br>输出值为枚举第一个值<br>总结：枚举类型默认是与int兼容，可通过强转相互转换<br>当转换枚举中没有的值时，不抛异常，直接显示数字<br>同样也能与string转换，如果枚举转换成string，直接用tostring<br>如果将string转换成枚举要用一下代码：（要转换的枚举类型）Enum.Parse(typeof（要转换的枚举类型），“要转换的字符转”)；<br>转换的是数字，枚举没有，不抛异常<br>转换为文本，枚举中没有，抛异常</p>
+<hr>
+<p>这里有个简单的练习</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">namespace _2021_12_30</span><br><span class="line">{</span><br><span class="line">    // public enum gender</span><br><span class="line">    //{</span><br><span class="line">    //    男,</span><br><span class="line">    //    女</span><br><span class="line">    //}</span><br><span class="line">    public enum state{//state这里首字母都要大写，要求</span><br><span class="line">        online=1,</span><br><span class="line">        offline,</span><br><span class="line">        leave,</span><br><span class="line">        busy,</span><br><span class="line">        qMe</span><br><span class="line">    }</span><br><span class="line">    class Program</span><br><span class="line">    {</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        {</span><br><span class="line">            //int n = 10;</span><br><span class="line">            //gender gender = gender.男;</span><br><span class="line">            //Console.WriteLine("Hello World!");</span><br><span class="line">            //提示用户输入一个在线状态，我们接收，将输入转换成枚举类型，再打印到控制台中</span><br><span class="line">            Console.WriteLine("请输入您的在线状态,1--online 2--offline 3--leave 4--busy 5--qMe");</span><br><span class="line">            string input = Console.ReadLine();</span><br><span class="line">            switch (input)</span><br><span class="line">            {</span><br><span class="line">                case "1": state s1 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s1);</span><br><span class="line">                    break;</span><br><span class="line">                case "2": state s2 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s2);</span><br><span class="line">                    break;</span><br><span class="line">                case "3": state s3 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}",s3);</span><br><span class="line">                    break;</span><br><span class="line">                case "4": state s4 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}", s4);</span><br><span class="line">                    break;</span><br><span class="line">                case "5":state s5 = (state)Enum.Parse(typeof(state), input);</span><br><span class="line">                    Console.WriteLine("您选择的在线状态是{0}", s5);</span><br><span class="line">                    break;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>结构：可以帮助我们一次性声明多个不同类型的变量<br>语法：[public] struct 结构名（这里跟enum一样结构名首字母要大写）<br>{<br>    成员；<br>}</p>
+<hr>
+<p>今天是2022年1月1日，希望把去年不开心的忘记<br>新的一年发发出传奇，叮叮都能振到刀，u3d学习顺利，考研顺利，找到个npy<br>祝我身边的朋友身体健康，事事顺心<br><img src="/.com//%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90.jpg" alt="新年快乐"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/01/2022/" data-id="clmob26cw000egg94h3c05z8l" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2022/01/01/1-1/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      新年第一天（2）
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2021/10/22/10-22/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">今天比较有空</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

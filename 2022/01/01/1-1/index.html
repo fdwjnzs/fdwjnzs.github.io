@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    新年第一天（2） |
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-1-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  新年第一天（2）
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2022/01/01/1-1/" class="article-date">
+  <time datetime="2021-12-31T16:00:00.000Z" itemprop="datePublished">2022-01-01</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h2 id="接今天早上的写"><a href="#接今天早上的写" class="headerlink" title="接今天早上的写"></a>接今天早上的写</h2><p>变量只能存一个值，而字段能存多个值<br>字段在规则上要在命名前加上_(下划线) </p>
+<hr>
+<p>俩简单例子：<br>//using System;</p>
+<p>//namespace _2022_1_1<br>//{<br>//    public struct Person<br>//    {<br>//        public string _name;<br>//        public int _age;<br>//        public Gender _gender;<br>//    }<br>//    public enum Gender<br>//    {<br>//        男,<br>//        女<br>//    }</p>
+<p>//    class Program<br>//    {<br>//        static void Main(string[] args)<br>//        {<br>            //定义一个结构类型Person，有三个成员，分别是姓名，性别，年龄，性别用枚举类型<br>            //声明两个Person类型的变量，分别表示张三男18岁，小兰女16岁<br>//            Person zsPerson;<br>//            zsPerson._name = “张三”;<br>//            zsPerson._age = 18;<br>//            zsPerson._gender = Gender.男;</p>
+<p>//            Person xlPerson;<br>//            xlPerson._name = “小兰”;<br>//            xlPerson._age = 16;<br>//            xlPerson._gender = Gender.女;</p>
+<p>//            Console.WriteLine(“{0}，{1}，{2}”, zsPerson._name, zsPerson._age, zsPerson._gender);<br>//            Console.WriteLine(“{0}，{1}，{2}”, xlPerson._name, xlPerson._age, xlPerson._gender);<br>//        }<br>//    }<br>//}<br>//using System;</p>
+<p>//namespace _2022_1_1<br>//{</p>
+<p>//    public struct MyColor<br>//    {<br>//        public int _red;<br>//        public int _green;<br>//        public int _blue;</p>
+<p>//    }<br>//    class Program<br>//    {<br>//        static void Main(string[] args)<br>//        {<br>//定义一个结构叫MyColor，有三个成员，分别定义为int类型的red，green，blue<br>//声明一个MyColor类型的变量，并对其成员赋值，使MyColor可以表示成一个红色<br>//首先要搞清楚红绿蓝是三原色，一切的颜色都可以通过红绿蓝从0-255表示出来<br>//            MyColor mc;<br>//            mc._red = 255;<br>//            mc._blue = 0;<br>//            mc._green = 0;<br>//            Console.WriteLine(“{0}”,mc);<br>//            Console.ReadKey();<br>//        }<br>//    }<br>//}</p>
+<hr>
+<p>数组<br>一次性存储多个相同类型的变量（结构是存储不同）<br>语法：数组类型[] 数组名=new 数组类型[数组长度]；<br>数组长度一旦固定了，就不能再被改变了<br>int数组不赋值 默认为0<br>string数组不赋值 默认为 null（null不是空，表示为开空间）<br>bool数组不赋值 默认为false<br>数组的声明方式int [] nums={1,2,4,5};<br>要不就是从[0]开始一个一个循环赋值<br>还有int [] nums=new int[3] {1,2,3};(不推荐)<br>还有int [] nums =new int[] {1,2,3};(不推荐)</p>
+<hr>
+<p>数组的应用/练习<br>using System;</p>
+<p>namespace jichu<br>{<br>    class Program<br>    {<br>        static void Main(string[] args)<br>        {<br>            //练习1，从整数数组中取出最大的整数，最小整数，总和，平均值<br>            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };<br>            int max = int.MinValue;//nums[0];<br>            int min = int.MaxValue;//nums[0];<br>            int sum = 0;<br>            for (int i = 0; i &lt; nums.Length; i++)<br>            {<br>                if (nums[i] &gt; max)<br>                {<br>                    max = nums[i];<br>                }<br>                if (nums[i] &lt; min)<br>                {<br>                    min = nums[i];<br>                }<br>                sum += nums[i];<br>            }<br>            Console.WriteLine(“这个数组的最大值是{0},最小值是{1},总和为{2},平均数是{3}”,max,min,sum,sum/nums.Length);<br>            Console.ReadKey();<br>        }<br>    }<br>}</p>
+<hr>
+<p>c#内容就写到这里了<br>这里我就不装了，2022-1-1曼城2-1逆转阿森纳<br>虽然赛程密集，但是这场左后卫的阿克真的不适应这个位置和左边锋的斯特林没有任何配合<br>导致b席和丁丁得回撤到后场拿球，更何况曼城是著名的无锋阵，没有支点，致使阿森纳从全场看下来<br>都是更加优秀的一边<br>关于点球和两黄变一红，我觉得没得洗，两强相遇，更加兴奋的球队更能占据主动，把握场上局势<br>阿森纳确实做得好，但是越兴奋越容易上头，把握不好自己的情绪就是拿红牌下去的主要原因<br>这场踢阿森纳确实如瓜瓜所说进5年内最强的阿森纳，确实未来可期<br>但是我的主队还是曼城，罗德里最后时刻的绝杀太帅了，这场的3分实在是太关键了<br>是这个赛季英超冠军上比较关键的一场了，gooooooal~~<br><img src="/.com//%E7%BB%9D%E6%9D%80.jpg" alt="绝杀"></p>
+<hr>
+<p>我这个寒假尽量做到天天写blog好吧，也是督促我自己早点掌握c#和u3d<br>今天还是1月1号，祝朋友们恭喜发财，万事顺意，再见！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/01/1-1/" data-id="clmob26cf0002gg94873id86h" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2022/01/02/2022-1-2/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      今天你睡饱了吗①
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2022/01/01/2022/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">新年第一天</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

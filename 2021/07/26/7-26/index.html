@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    7-26 |
+    
+    fdw&#39;blog
+  </title>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon/apple-touch-icon-167x167.png">
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="fdw'blog" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-7-26" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  7-26
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/07/26/7-26/" class="article-date">
+  <time datetime="2021-07-25T16:00:00.000Z" itemprop="datePublished">2021-07-26</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <p>网线分为 568A 和568B<br>568A主要应用于交叉线 什么意思呢 就是网线两头 一端为568A 另一端为568B<br>线序的排布为 白绿 绿 白橙 蓝 白蓝 橙 白棕 棕<br>568B则主要应用于直连线 意思就是网线两头都是为568B排布<br>568B的线序排布为白橙 橙 白绿 蓝 白蓝 绿 白棕 棕</p>
+<p>过去568A和568B是要分情况使用的 在交换机 HUB PC 路由器之间有着明确的划分的<br>但是随着科技的发展 这种需要辨别的情况就日渐减弱<br>在我们国家最常见的就是568B 这种线序排布<br>已经满足我们日常生活的需要了</p>
+<p>虽然分为8根线 但是真正起作用的还是只有四根 为白橙 橙 白绿 绿 对用B的 1 2 3 6这四根<br>另外 4 5 号线对应的蓝 白蓝 起到的是电话线  7 8 白棕 棕 则是监控线</p>
+<p>真正做这个网线其实很容易 没什么好说的<br>为什么会聊到这个呢 主要是实习的时候要求帮个忙 但是我不会 老尴尬了<br>虽然是学的软件 但是呢 我觉得这种技能还是比较基础的 就记录下来了<br>另外还有些测试硬盘 重装系统 安装盗版windows 哈哈哈就更没什么好说的了~</p>
+<p>c# （第几天 忘记了）<br>还是很基础的一天：</p>
+<ul>
+<li>连接两个字符串 （当+两边有一边为字符串就是起这个作用）<br>占位符：这个东西在java好像没遇到过 c里面不记得了<br>c#中占位符是特别重要的一个符号了<br>{0}{1}{2}类似这种 输出的时候：Console.WriteLine(“要输出的是{0}{1}”,n1,n2);<br>n1,n2之前定义过的 比之前用+没那么容易出错<br>多填坑 不报错 没实际效果<br>少填了坑 出现异常（但是语法并没有错误，不过在程序运行期间出现问题，使得程序不能正常运行）<br>占位符最终是按照挖坑的顺序输出<br>占位符在一个输出语句中始终要从{0}开始 不管之前写到哪里<br>{0:0.00}表示小数点后保留两个小数</li>
+</ul>
+<p>交换两个数字 不用第三方变量<br>a=a+b<br>b=a-b<br>a=a-b</p>
+<p>接收用户在控制台的输入Console.ReadLine();<br>但是需要定义一个字符串类型的变量来存储输入的数据string<br>例：string a = Console.ReadLine();</p>
+<p>转义符 ‘\’加一个字符组成一个由特殊意义的字符：<br>\n 换行<br>"表示一个英文下的双引号<br>\t 表示一个tab键的空格 多用于排版<br>\b 表示一个退格键 放在字符串两边没有效果<br>\表示一个\</p>
+<p>@符号写在“”之前表示让\不作为转义符 单纯作为一个\<br>第二个作用是保留原格式输出</p>
+<p>在char中 只能写一个字符 但是在单引号之间写比如一个\b 此处的\表示转义的作用<br>这个\表示的是backspace 即退格键</p>
+<p>算数运算符</p>
+<ul>
+<li><ul>
+<li><ul>
+<li> /（整除）   % (取余)  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>要求等号两边参与操作数的类型必须一致，如果不一致，满足下列条件，发生隐式转换<br>类型兼容 且 目标类型大于源类型：比如int转换成 double<br>如果要将double转换成int 需要强制类型转换<br>（待转换的类型）要转换的值；<br>比如说d=300.6<br>         int n =（int）d；<br>最后会输出300</p>
+<p>头疼 gaming ^_^</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/26/7-26/" data-id="clmob26cv000dgg94afe6fp97" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2021/07/31/7-31/" class="article-nav-link">
+    <strong class="article-nav-caption">Newer</strong>
+    <div class="article-nav-title">
+      
+      7-31
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2021/07/18/%E5%8D%A7%E6%A7%BD%EF%BC%8C%E7%AE%A1/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">卧槽，管</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>fdw&#39;blog &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="fdw&#39;blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
